@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="wap-font-scale" content="no">
+    <title>测试</title>
+    <script type="text/javascript">
+    //初始化界面缩放和根节点字体像素大小
+    var __root = document.documentElement,
+        viewport = __root.querySelector("meta[name='viewport']"),
+        scale = 1 / window.devicePixelRatio,
+        content = "width=device-width,initial-scale=" + scale + ",user-scalable=0",
+        baseWidth = 750,
+        baseFontSize = 100,
+        calFontSize = (parseInt(__root.clientWidth) / baseWidth * baseFontSize) * window.devicePixelRatio;
+    viewport.setAttribute("content", content);
+    __root.style.fontSize = calFontSize + "px";
+    </script>
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="stylesheet" type="text/css" href="style/example.css">
+</head>
+
+<body ontouchstart="">
+    <div class="zz-header">
+        <div class="zz-header-wrap">
+        </div>
+    </div>
+    <div class="zz-body">
+        <div class="flex-demo">
+            <div class="zz-flex">
+                <div class="zz-flex-item">1</div>
+            </div>
+            <div class="zz-flex">
+                <div class="zz-flex-item">1</div>
+                <div class="zz-flex-item">2</div>
+                <div class="zz-flex-item">3</div>
+            </div>
+            <div class="zz-flex">
+                <div class="zz-flex-item">1</div>
+                <div class="zz-flex-item">2</div>
+                <div class="zz-flex-item">3</div>
+                <div class="zz-flex-item">4</div>
+            </div>
+            <div class="zz-flex">
+                <div class="zz-flex-item">1</div>
+                <div class="zz-flex-item">2</div>
+                <div class="zz-flex-item">3</div>
+                <div class="zz-flex-item">4</div>
+                <div class="zz-flex-item">5</div>
+            </div>
+        </div>
+        <div class="zz-grid-demo">
+            <div class="zz-grids">
+                <a href="javascript:;" class="zz-grid-3">1</a>
+                <a href="javascript:;" class="zz-grid-3">2</a>
+                <a href="javascript:;" class="zz-grid-3">3</a>
+                <a href="javascript:;" class="zz-grid-3">4</a>
+            </div>
+            <div class="zz-grids">
+                <a href="javascript:;" class="zz-grid-4">1</a>
+                <a href="javascript:;" class="zz-grid-4">2</a>
+                <a href="javascript:;" class="zz-grid-4">3</a>
+                <a href="javascript:;" class="zz-grid-4">4</a>
+                <a href="javascript:;" class="zz-grid-4">5</a>
+                <a href="javascript:;" class="zz-grid-4">6</a>
+            </div>
+        </div>
+    </div>
+    <div class="zz-footer">
+        <div class="zz-footer-wrap"></div>
+    </div>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>

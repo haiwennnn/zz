@@ -1,0 +1,34 @@
+.borderBase {
+    content: " ";
+    position: absolute;
+}
+
+.setTopLine(@c: #C7C7C7, @w: 1px) {
+    .borderBase;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: @w solid @c;
+    color: @c;
+}
+
+.setRightLine(@c: #C7C7C7, @w: 1px) {
+	.borderBase;
+	right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    border-right: @w solid @c;
+    color: @c;
+}
+
+.setBottomLine(@c: #C7C7C7, @w: 1px){
+	.borderBase;
+	left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: @w solid @c;
+    color: @c;
+}
