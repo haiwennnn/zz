@@ -1,0 +1,37 @@
+.zz-btn {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    box-sizing: border-box;
+    font-size: .28rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: .84rem;
+    border-radius: .84rem;
+    .setTapColor();
+    overflow: hidden;
+    background-color: #f29360;
+    &:after {
+        content: " ";
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid rgba(0, 0, 0, .1);
+        transform: scale(.5);
+        transform-origin: 0 0;
+        box-sizing: border-box;
+        border-radius: .84rem;
+    }
+    &:not(.zz-btn-disabled):visited {
+        background-color: #e38755;
+    }
+    &:not(.zz-btn-disabled):active {
+        background-color: #e38755;
+    }
+}

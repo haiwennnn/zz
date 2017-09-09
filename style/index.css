@@ -124,3 +124,72 @@ body {
 .zz-grid-4:nth-child(4n):before {
   display: none;
 }
+.zz-btn {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: .2rem;
+  padding-right: .2rem;
+  box-sizing: border-box;
+  font-size: .28rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  line-height: .84rem;
+  border-radius: .84rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  background-color: #f29360;
+}
+.zz-btn:after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  box-sizing: border-box;
+  border-radius: .84rem;
+}
+.zz-btn:not(.zz-btn-disabled):visited {
+  background-color: #e38755;
+}
+.zz-btn:not(.zz-btn-disabled):active {
+  background-color: #e38755;
+}
+.zz-btn-group {
+  font-size: 0;
+}
+.zz-btn-group .zz-btn {
+  display: inline-block;
+  line-height: .64rem;
+  margin-right: .2rem;
+  vertical-align: bottom;
+  border-radius: .2rem;
+}
+.zz-btn-group button.zz-btn,
+.zz-btn-group input[type="button"].zz-btn {
+  width: auto;
+}
+.zz-btn-disabled {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #d4d4d4;
+}
+button.zz-btn,
+input[type='button'].zz-btn {
+  width: 100%;
+  border-width: 0;
+  outline: 0;
+  -webkit-appearance: none;
+}
+button.zz-btn:focus,
+input[type='button'].zz-btn:focus {
+  outline: 0;
+}
+.zz-btn + .zz-btn {
+  margin-top: .2rem;
+}
