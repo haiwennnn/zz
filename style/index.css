@@ -22,6 +22,14 @@ a {
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+body {
+  background-color: #efefef;
+}
+/* 主容器 */
+.zz-container {
+  position: relative;
+  box-sizing: border-box;
+}
 /* heeder */
 .zz-header {
   height: .8rem;
@@ -38,6 +46,9 @@ a {
   z-index: 50;
 }
 /* body */
+.zz-body {
+  padding-bottom: .2rem;
+}
 /* footer */
 .zz-footer {
   height: .8rem;
@@ -74,8 +85,8 @@ a {
   top: 0;
   bottom: 0;
   width: 1px;
-  border-right: 1px solid #c7c7c7;
-  color: #c7c7c7;
+  border-right: 1px solid #d9d9d9;
+  color: #d9d9d9;
 }
 .zz-grids > [class^="zz-grid-"]:after {
   content: " ";
@@ -84,8 +95,8 @@ a {
   bottom: 0;
   right: 0;
   height: 1px;
-  border-bottom: 1px solid #c7c7c7;
-  color: #c7c7c7;
+  border-bottom: 1px solid #d9d9d9;
+  color: #d9d9d9;
 }
 .zz-grids > [class^="zz-grid-"]:active {
   background-color: #ECECEC;
@@ -97,8 +108,9 @@ a {
   top: 0;
   right: 0;
   height: 1px;
-  border-top: 1px solid #c7c7c7;
-  color: #c7c7c7;
+  border-top: 1px solid #d9d9d9;
+  color: #d9d9d9;
+  z-index: 2;
 }
 .zz-grid-3 {
   width: 33.3333333%;
