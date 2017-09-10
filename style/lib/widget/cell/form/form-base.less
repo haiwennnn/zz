@@ -1,0 +1,40 @@
+.zz-label {
+    display: block;
+    width: 1.4rem;
+    .text_wrap()
+}
+
+.zz-input {
+    width: 100%;
+    line-height: .4rem;
+    border: 0;
+    outline: 0;
+    font-size: inherit;
+    -webkit-appearance: none;
+    background-color: transparent;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    // hides the spin-button
+
+    &::-webkit-outer-spin-button, &::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.zz-cell-select{
+	.zz-cell-bd{
+		position: relative;
+		padding-right: .3rem;
+		p{
+			background-color: #ff6600;
+		}
+		&:after{
+			content: "";
+			.setArrow(down,.14rem,#c8c8cd,2px);
+			position: absolute;
+			top:50%;
+			right: 0;
+			margin-top: -.13rem;
+		}
+	}
+}

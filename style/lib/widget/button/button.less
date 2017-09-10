@@ -1,0 +1,20 @@
+@import "button-base";
+@import "button-group";
+@import "button-disabled";
+
+button,
+input[type='button'] {
+    &.zz-btn {
+        width: 100%;
+        border-width: 0;
+        outline: 0;
+        -webkit-appearance: none;
+        &:focus {
+            outline: 0;
+        }
+    }
+}
+
+.zz-btn + .zz-btn{
+	margin-top: .2rem;
+}

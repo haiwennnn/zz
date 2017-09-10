@@ -30,6 +30,14 @@ body {
   position: relative;
   box-sizing: border-box;
 }
+/* block包裹容器 */
+.zz-b {
+  display: block;
+}
+/* inline-block包裹容器 */
+.zz-ib {
+  display: inline-block;
+}
 /* heeder */
 .zz-header {
   height: .8rem;
@@ -192,4 +200,82 @@ input[type='button'].zz-btn:focus {
 }
 .zz-btn + .zz-btn {
   margin-top: .2rem;
+}
+.zz-cells {
+  position: relative;
+  overflow: hidden;
+}
+.zz-cells:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid #d9d9d9;
+  color: #d9d9d9;
+}
+.zz-cell {
+  position: relative;
+  display: flex;
+  padding: .2rem .3rem;
+  align-items: center;
+  font-size: .3rem;
+}
+.zz-cell:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #d9d9d9;
+  color: #d9d9d9;
+}
+.zz-cell-bd {
+  flex: 1;
+}
+.zz-label {
+  display: block;
+  width: 1.4rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.zz-input {
+  width: 100%;
+  line-height: .4rem;
+  border: 0;
+  outline: 0;
+  font-size: inherit;
+  -webkit-appearance: none;
+  background-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.zz-input::-webkit-outer-spin-button,
+.zz-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.zz-cell-select .zz-cell-bd {
+  position: relative;
+  padding-right: .3rem;
+}
+.zz-cell-select .zz-cell-bd p {
+  background-color: #ff6600;
+}
+.zz-cell-select .zz-cell-bd:after {
+  content: "";
+  display: inline-block;
+  height: 0.14rem;
+  width: 0.14rem;
+  border-width: 2px 2px 0 0;
+  border-color: #c8c8cd;
+  border-style: solid;
+  transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0);
+  position: relative;
+  top: -3px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -0.13rem;
 }
