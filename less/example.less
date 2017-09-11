@@ -1,3 +1,5 @@
+@import "../style/lib/base/fn";
+
 .zz-body {
     &>div {
         margin-top: .2rem;
@@ -43,5 +45,20 @@
     .zz-cell-input input,
     .zz-cell-select p {
         text-align: right;
+    }
+}
+
+.zz-cells{
+    margin-top: .2rem;
+}
+
+.zz-cells-checkbox-demo{
+    position: relative;
+    margin: 0 .6rem;
+    &:after{
+        .setLeftLine();
+    }
+    &:before{
+        .setRightLine();
     }
 }

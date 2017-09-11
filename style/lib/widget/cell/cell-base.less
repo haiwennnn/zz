@@ -1,22 +1,35 @@
-.zz-cells{
-	position: relative;
-	overflow: hidden;
-	&:before{
-		.setTopLine();
-	}
+.zz-cells {
+    position: relative;
+    overflow: hidden;
+    &:before {
+        .setTopLine();
+    }
 }
 
-.zz-cell{
-	position: relative;
-	display: flex;
-	padding:.2rem .3rem;
-	align-items: center;
-	font-size: .3rem;
-	&:after{
-		.setBottomLine();
-	}
+.zz-cell {
+    position: relative;
+    display: flex;
+    padding: .2rem .3rem;
+    align-items: center;
+    font-size: .3rem;
+    &:after {
+        .setBottomLine();
+    }
 }
 
-.zz-cell-bd{
-	flex:1;
+.zz-check-label {
+    .setTapColor();
+    &:active {
+        background-color: #ECECEC;
+    }
+}
+
+.zz-cell-hd {
+    img {
+        display: block;
+    }
+}
+
+.zz-cell-bd {
+    flex: 1;
 }
