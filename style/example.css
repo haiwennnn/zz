@@ -24,3 +24,7 @@
 .zz-button-group-demo {
   padding: 0 .3rem;
 }
+.cell-form-demo .zz-cell-input input,
+.cell-form-demo .zz-cell-select p {
+  text-align: right;
+}

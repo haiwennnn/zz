@@ -1,0 +1,15 @@
+.ellipsisLn(@line) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @line;
+}
+.textWrap() {
+    word-wrap:break-word;
+    word-break:break-all;
+}
+
+.setTapColor(@c:rgba(0,0,0,0)) {
+    -webkit-tap-highlight-color: @c;
+}

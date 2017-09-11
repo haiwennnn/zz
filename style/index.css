@@ -23,7 +23,7 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  background-color: #efefef;
+  background-color: #fff;
 }
 /* 主容器 */
 .zz-container {
@@ -241,6 +241,9 @@ input[type='button'].zz-btn:focus {
   word-wrap: break-word;
   word-break: break-all;
 }
+.zz-cell-input .zz-cell-bd {
+  padding: 0 .2rem;
+}
 .zz-input {
   width: 100%;
   line-height: .4rem;
@@ -258,10 +261,7 @@ input[type='button'].zz-btn:focus {
 }
 .zz-cell-select .zz-cell-bd {
   position: relative;
-  padding-right: .3rem;
-}
-.zz-cell-select .zz-cell-bd p {
-  background-color: #ff6600;
+  padding: 0 .2rem;
 }
 .zz-cell-select .zz-cell-bd:after {
   content: "";
@@ -276,6 +276,6 @@ input[type='button'].zz-btn:focus {
   top: -3px;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: -0.1rem;
   margin-top: -0.13rem;
 }
