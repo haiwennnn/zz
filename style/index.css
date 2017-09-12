@@ -23,7 +23,7 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  background-color: #fff;
+  background-color: #ececec;
 }
 /* 主容器 */
 .zz-container {
@@ -204,6 +204,7 @@ input[type='button'].zz-btn:focus {
 .zz-cells {
   position: relative;
   overflow: hidden;
+  background-color: #fff;
 }
 .zz-cells:before {
   content: " ";
@@ -214,6 +215,17 @@ input[type='button'].zz-btn:focus {
   height: 1px;
   border-top: 1px solid #d9d9d9;
   color: #d9d9d9;
+}
+.zz-cells__title {
+  margin-top: .25rem;
+  margin-bottom: .1rem;
+  padding-left: .3rem;
+  padding-right: .3rem;
+  color: #999;
+  font-size: .28rem;
+}
+.zz-cells__title + .zz-cells {
+  margin-top: 0;
 }
 .zz-cell {
   position: relative;
@@ -268,6 +280,30 @@ input[type='button'].zz-btn:focus {
   -webkit-appearance: none;
   margin: 0;
 }
+.zz-cell-access:active {
+  background-color: #ECECEC;
+}
+.zz-cell-access .zz-cell-ft {
+  position: relative;
+  padding-right: .2rem;
+  color: #999;
+}
+.zz-cell-access .zz-cell-ft:after {
+  content: "";
+  display: inline-block;
+  height: 0.14rem;
+  width: 0.14rem;
+  border-width: 2px 2px 0 0;
+  border-color: #c8c8cd;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: relative;
+  top: -2px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -0.3em;
+}
 .zz-cell-select .zz-cell-bd {
   position: relative;
   padding: 0 .2rem;
@@ -295,7 +331,7 @@ input[type='button'].zz-btn:focus {
   padding: 0 .2rem;
 }
 .zz-cells-radio .zz-cell-ft {
-  width: 0;
+  width: .3rem;
 }
 .zz-cells-radio .zz-cell-ft .zz-radio {
   position: absolute;
@@ -306,7 +342,7 @@ input[type='button'].zz-btn:focus {
 }
 .zz-cells-radio .zz-cell-ft i.icon {
   position: relative;
-  right: .1rem;
+  right: 0;
   display: none;
   transform: scale(1.2);
   color: #445c95;
@@ -339,4 +375,21 @@ input[type='button'].zz-btn:focus {
 }
 .zz-cells-checkbox .zz-cell-bd img {
   vertical-align: middle;
+}
+.zz-badge {
+  display: inline-block;
+  min-width: .06rem;
+  line-height: 1.2;
+  margin-top: -0.05rem;
+  padding: .025rem .1rem;
+  border-radius: .14rem;
+  background-color: #F43530;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: .24rem;
+  vertical-align: middle;
+}
+.zz-badge-dot {
+  padding: .1rem;
+  min-width: 0;
 }
