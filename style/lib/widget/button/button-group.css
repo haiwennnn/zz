@@ -1,0 +1,14 @@
+.zz-btn-group {
+  font-size: 0;
+}
+.zz-btn-group .zz-btn {
+  display: inline-block;
+  line-height: .64rem;
+  margin-right: .2rem;
+  vertical-align: bottom;
+  border-radius: .2rem;
+}
+.zz-btn-group button.zz-btn,
+.zz-btn-group input[type="button"].zz-btn {
+  width: auto;
+}

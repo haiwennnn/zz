@@ -2,9 +2,6 @@
   content: " ";
   position: absolute;
 }
-.zz-body > div {
-  margin-top: .2rem;
-}
 .flex-demo .zz-flex {
   margin-top: .1rem;
 }

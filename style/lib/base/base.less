@@ -1,62 +1,133 @@
-body{
+body {
     background-color: #ececec;
 }
 
+
+
 /* 主容器 */
-.zz-container{
-    position: relative;
+
+.zz-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     box-sizing: border-box;
 }
 
+
+
 /* block包裹容器 */
-.zz-b{
+
+.zz-b {
     display: block;
 }
 
+
+
 /* inline-block包裹容器 */
-.zz-ib{
+
+.zz-ib {
     display: inline-block;
 }
+
+
 
 /* heeder */
 
 .zz-header {
-    height: .8rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0; // height: .8rem;
 }
 
 .zz-header-wrap {
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     width: 100%;
-    height: .8rem;
-    background-color: #ff6600;
+    height: .85rem;
+    background-color: #fff;
     z-index: 50;
+    color: #445c95;
 }
 
+.zz-header-title {
+    width: 3.5rem;
+    line-height: .82rem;
+    margin: 0 auto;
+    font-size: .36rem;
+    text-align: center;
+    span{
+        display: block;
+    }
+}
+
+.zz-hedaer-left,.zz-hedaer-right{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    font-size: .3rem;
+}
+
+.zz-hedaer-left{
+    left: 0;
+    padding-left: .2rem;
+}
+.zz-hedaer-right{
+    right: 0;
+}
+.zz-header-item{
+    display: inline-block;
+    min-width: .4rem;
+    line-height: .85rem;
+    padding: 0 .1rem;
+    text-align: center;
+    vertical-align: top;
+    i.icon{
+        font-size: .42rem;
+    }
+}
 
 /* body */
 
 .zz-body {
-    padding-bottom: .2rem;
+    height: 100%;
+    padding-top: .85rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
+
+.zz-body-wrap {
+    padding-bottom: .3rem;
+}
+
 
 
 /* footer */
 
 .zz-footer {
-    height: .8rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    &+.zz-body {
+        padding-bottom: .85rem;
+    }
 }
 
 .zz-footer-wrap {
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
-    height: .8rem;
+    height: .85rem;
     background-color: #0f0;
     z-index: 50;
 }

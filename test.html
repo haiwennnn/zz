@@ -12,7 +12,7 @@
     var __root = document.documentElement,
         viewport = __root.querySelector("meta[name='viewport']"),
         scale = 1 / window.devicePixelRatio,
-        content = "width=device-width,initial-scale=" + scale + ",maximum-scale=" + scale + ",user-scalable=0",
+        content = "width=device-width,initial-scale=" + scale + ",maximum-scale=" + scale + ",minimum-scale=" + scale + ",user-scalable=0",
         baseWidth = 750,
         baseFontSize = 100,
         calFontSize = (parseInt(__root.clientWidth) / baseWidth * baseFontSize) * window.devicePixelRatio;
@@ -28,210 +28,229 @@
     <div class="zz-container">
         <div class="zz-header">
             <div class="zz-header-wrap">
-            </div>
-        </div>
-        <div class="zz-body">
-            <div class="flex-demo">
-                <div class="zz-flex">
-                    <div class="zz-flex-item">1</div>
+                <div class="zz-hedaer-left">
+                    <span class="zz-header-item">
+                        <i class="icon ion-ios-arrow-back"></i>
+                    </span>
+                    <span class="zz-header-item">帮助帮助帮</span>
                 </div>
-                <div class="zz-flex">
-                    <div class="zz-flex-item">1</div>
-                    <div class="zz-flex-item">2</div>
-                    <div class="zz-flex-item">3</div>
+                <div class="zz-header-title">
+                    <span>薪享事成标题栏目</span>
                 </div>
-                <div class="zz-flex">
-                    <div class="zz-flex-item">1</div>
-                    <div class="zz-flex-item">2</div>
-                    <div class="zz-flex-item">3</div>
-                    <div class="zz-flex-item">4</div>
-                </div>
-                <div class="zz-flex">
-                    <div class="zz-flex-item">1</div>
-                    <div class="zz-flex-item">2</div>
-                    <div class="zz-flex-item">3</div>
-                    <div class="zz-flex-item">4</div>
-                    <div class="zz-flex-item">5</div>
-                </div>
-            </div>
-            <div class="zz-grid-demo">
-                <div class="zz-grids">
-                    <a href="javascript:;" class="zz-grid-3">1</a>
-                    <a href="javascript:;" class="zz-grid-3">2</a>
-                    <a href="javascript:;" class="zz-grid-3">3</a>
-                    <a href="javascript:;" class="zz-grid-3">4</a>
-                </div>
-                <div class="zz-grids">
-                    <a href="javascript:;" class="zz-grid-4">1</a>
-                    <a href="javascript:;" class="zz-grid-4">2</a>
-                    <a href="javascript:;" class="zz-grid-4">3</a>
-                    <a href="javascript:;" class="zz-grid-4">4</a>
-                    <a href="javascript:;" class="zz-grid-4">5</a>
-                    <a href="javascript:;" class="zz-grid-4">6</a>
-                </div>
-            </div>
-            <div class="zz-button-demo">
-                <button class="zz-btn zz-btn-disabled">button按钮</button>
-                <input class="zz-btn zz-btn-disabled" type="button" name="" value="input按钮">
-                <a href="javascript:;" class="zz-btn zz-btn-disabled">a按钮</a>
-            </div>
-            <div class="zz-button-group-demo">
-                <div class="zz-btn-group">
-                    <button class="zz-btn zz-btn-disabled">button按钮</button>
-                    <input class="zz-btn" type="button" name="" value="input按钮">
-                    <a href="javascript:;" class="zz-btn">a按钮</a>
-                    <input class="zz-btn " type="button" name="" value="input按钮">
-                    <a href="javascript:;" class="zz-btn">a按钮</a>
-                    <input class="zz-btn zz-btn-disabled" type="button" name="" value="input按钮">
-                    <a href="javascript:;" class="zz-btn ">a按钮</a>
-                </div>
-            </div>
-            <div class="cells-demo">
-                <div class="zz-cells__title">基础项目</div>
-                <div class="zz-cells">
-                    <div class="zz-cell">
-                        <div class="zz-cell-hd">教育成都</div>
-                        <div class="zz-cell-bd">body</div>
-                        <div class="zz-cell-ft">footer</div>
-                    </div>
-                </div>
-                <div class="zz-cells__title">表单特殊项</div>
-                <div class="zz-cells">
-                    <div class="zz-cell zz-cell-input">
-                        <div class="zz-cell-hd">
-                            <label class="zz-label">婚姻程度</label>
-                        </div>
-                        <div class="zz-cell-bd">
-                            <input class="zz-input" type="text" name="" placeholder="请输入yy123">
-                        </div>
-                    </div>
-                    <div class="zz-cell zz-cell-select">
-                        <div class="zz-cell-hd">
-                            <label class="zz-label">婚姻程度</label>
-                        </div>
-                        <div class="zz-cell-bd">
-                            <p>已婚已婚已婚已婚已婚已婚已婚已婚</p>
-                        </div>
-                    </div>
-                    <!-- TODO switch -->
-                </div>
-                <div class="zz-cells__title">list列表</div>
-                <div class="zz-cells">
-                    <div class="zz-cell">
-                        <div class="zz-cell-bd">
-                            <p>标题1</p>
-                        </div>
-                        <div class="zz-cell-ft">
-                            说明
-                        </div>
-                    </div>
-                    <div class="zz-cell">
-                        <div class="zz-cell-bd">
-                            <p>标题2</p>
-                        </div>
-                        <div class="zz-cell-ft">
-                            说明
-                        </div>
-                    </div>
-                </div>
-                <div class="zz-cells__title">list access列表</div>
-                <div class="zz-cells">
-                    <div class="zz-cell zz-cell-access">
-                        <div class="zz-cell-bd">
-                            <p>标题1</p>
-                        </div>
-                        <div class="zz-cell-ft">
-                            <span style="vertical-align:middle;">说明</span>
-                            <span class="zz-badge zz-badge-dot"></span>
-                        </div>
-                    </div>
-                    <div class="zz-cell zz-cell-access">
-                        <div class="zz-cell-bd">
-                            <p>标题2</p>
-                        </div>
-                        <div class="zz-cell-ft">
-                            说明
-                            <span class="zz-badge">1</span>
-                        </div>
-                    </div>
-                    <div class="zz-cell zz-cell-access">
-                        <div class="zz-cell-hd">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" style="display: block;">
-                        </div>
-                        <div class="zz-cell-bd">
-                            <p>标题2</p>
-                        </div>
-                        <div class="zz-cell-ft">
-                            说明
-                        </div>
-                    </div>
-                </div>
-                <div class="zz-cells zz-cells-radio">
-                    <label class="zz-cell zz-check-label" for="r1">
-                        <div class="zz-cell-hd">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=">
-                        </div>
-                        <div class="zz-cell-bd">兴业银行兴业银行兴业银行兴业银行</div>
-                        <div class="zz-cell-ft">
-                            <input class="zz-radio" type="radio" name="radio1" id="r1">
-                            <i class="icon ion-android-done"></i>
-                        </div>
-                    </label>
-                    <label class="zz-cell zz-check-label" for="r2">
-                        <div class="zz-cell-hd">1y</div>
-                        <div class="zz-cell-bd">兴业银行兴业银行兴业银行兴业银行兴业行</div>
-                        <div class="zz-cell-ft">
-                            <input class="zz-radio" type="radio" name="radio1" id="r2">
-                            <i class="icon ion-android-done"></i>
-                        </div>
-                    </label>
-                    <label class="zz-cell zz-check-label" for="r3">
-                        <div class="zz-cell-hd">1y</div>
-                        <div class="zz-cell-bd">兴业银行</div>
-                        <div class="zz-cell-ft">
-                            <input class="zz-radio" type="radio" name="radio1" id="r3">
-                            <i class="icon ion-android-done"></i>
-                        </div>
-                    </label>
-                </div>
-                <div class="zz-cells-checkbox-demo">
-                    <div class="zz-cells zz-cells-checkbox">
-                        <label class="zz-cell zz-check-label" for="c1">
-                            <div class="zz-cell-hd">
-                                <input class="zz-checkbox" type="checkbox" name="checkbox1" id="c1">
-                                <i class="icon ion-android-radio-button-off"></i>
-                            </div>
-                            <div class="zz-cell-bd">
-                                多选按钮1111yyy[j]
-                            </div>
-                        </label>
-                        <label class="zz-cell zz-check-label" for="c2">
-                            <div class="zz-cell-hd">
-                                <input class="zz-checkbox" type="checkbox" name="checkbox1" id="c2">
-                                <i class="icon ion-android-radio-button-off"></i>
-                            </div>
-                            <div class="zz-cell-bd">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII="> 多选按钮1111yyy[j]
-                            </div>
-                        </label>
-                        <label class="zz-cell zz-check-label" for="c3">
-                            <div class="zz-cell-hd">
-                                <input class="zz-checkbox" type="checkbox" name="checkbox1" id="c3">
-                                <i class="icon ion-android-radio-button-off"></i>
-                            </div>
-                            <div class="zz-cell-bd">
-                                多选按钮1111yyy[j]
-                            </div>
-                        </label>
-                    </div>
-                </div>
+                <div class="zz-hedaer-right"></div>
             </div>
         </div>
         <div class="zz-footer">
             <div class="zz-footer-wrap"></div>
         </div>
+        <div class="zz-body">
+            <div class="zz-btn-group" style="margin:.3rem .2rem 0;">
+                        <button class="zz-btn" onClick="rld()">刷新2</button>
+                    </div>
+            <div class="zz-body-wrap">
+                <div class="flex-demo">
+                    <div class="zz-flex">
+                        <div class="zz-flex-item">1</div>
+                    </div>
+                    <div class="zz-flex">
+                        <div class="zz-flex-item">1</div>
+                        <div class="zz-flex-item">2</div>
+                        <div class="zz-flex-item">3</div>
+                    </div>
+                    <div class="zz-flex">
+                        <div class="zz-flex-item">1</div>
+                        <div class="zz-flex-item">2</div>
+                        <div class="zz-flex-item">3</div>
+                        <div class="zz-flex-item">4</div>
+                    </div>
+                    <div class="zz-flex">
+                        <div class="zz-flex-item">1</div>
+                        <div class="zz-flex-item">2</div>
+                        <div class="zz-flex-item">3</div>
+                        <div class="zz-flex-item">4</div>
+                        <div class="zz-flex-item">5</div>
+                    </div>
+                </div>
+                <div class="zz-grid-demo">
+                    <div class="zz-grids">
+                        <a href="javascript:;" class="zz-grid-3">1</a>
+                        <a href="javascript:;" class="zz-grid-3">2</a>
+                        <a href="javascript:;" class="zz-grid-3">3</a>
+                        <a href="javascript:;" class="zz-grid-3">4</a>
+                    </div>
+                    <div class="zz-grids">
+                        <a href="javascript:;" class="zz-grid-4">1</a>
+                        <a href="javascript:;" class="zz-grid-4">2</a>
+                        <a href="javascript:;" class="zz-grid-4">3</a>
+                        <a href="javascript:;" class="zz-grid-4">4</a>
+                        <a href="javascript:;" class="zz-grid-4">5</a>
+                        <a href="javascript:;" class="zz-grid-4">6</a>
+                    </div>
+                </div>
+                <div class="zz-button-demo">
+                    <button class="zz-btn zz-btn-disabled">button按钮</button>
+                    <input class="zz-btn zz-btn-disabled" type="button" name="" value="input按钮">
+                    <a href="javascript:;" class="zz-btn zz-btn-disabled">a按钮</a>
+                </div>
+                <div class="zz-button-group-demo">
+                    <div class="zz-btn-group">
+                        <button class="zz-btn zz-btn-disabled">button按钮</button>
+                        <input class="zz-btn" type="button" name="" value="input按钮">
+                        <a href="javascript:;" class="zz-btn">a按钮</a>
+                        <input class="zz-btn " type="button" name="" value="input按钮">
+                        <a href="javascript:;" class="zz-btn">a按钮</a>
+                        <input class="zz-btn zz-btn-disabled" type="button" name="" value="input按钮">
+                        <a href="javascript:;" class="zz-btn ">a按钮</a>
+                    </div>
+                </div>
+                <div class="cells-demo">
+                    <div class="zz-cells__title">基础项目</div>
+                    <div class="zz-cells">
+                        <div class="zz-cell">
+                            <div class="zz-cell-hd">教育成都</div>
+                            <div class="zz-cell-bd">body</div>
+                            <div class="zz-cell-ft">footer</div>
+                        </div>
+                    </div>
+                    <div class="zz-cells__title">表单特殊项</div>
+                    <div class="zz-cells">
+                        <div class="zz-cell zz-cell-input">
+                            <div class="zz-cell-hd">
+                                <label class="zz-label">婚姻程度</label>
+                            </div>
+                            <div class="zz-cell-bd">
+                                <input class="zz-input" type="text" name="" placeholder="请输入yy123">
+                            </div>
+                        </div>
+                        <div class="zz-cell zz-cell-select">
+                            <div class="zz-cell-hd">
+                                <label class="zz-label">婚姻程度</label>
+                            </div>
+                            <div class="zz-cell-bd">
+                                <p>已婚已婚已婚已婚已婚已婚已婚已婚</p>
+                            </div>
+                        </div>
+                        <!-- TODO switch -->
+                    </div>
+                    <div class="zz-cells__title">list列表</div>
+                    <div class="zz-cells">
+                        <div class="zz-cell">
+                            <div class="zz-cell-bd">
+                                <p>标题1</p>
+                            </div>
+                            <div class="zz-cell-ft">
+                                说明
+                            </div>
+                        </div>
+                        <div class="zz-cell">
+                            <div class="zz-cell-bd">
+                                <p>标题2</p>
+                            </div>
+                            <div class="zz-cell-ft">
+                                说明
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zz-cells__title">list access列表</div>
+                    <div class="zz-cells">
+                        <div class="zz-cell zz-cell-access">
+                            <div class="zz-cell-bd">
+                                <p>标题1</p>
+                            </div>
+                            <div class="zz-cell-ft">
+                                <span style="vertical-align:middle;">说明</span>
+                                <span class="zz-badge zz-badge-dot"></span>
+                            </div>
+                        </div>
+                        <div class="zz-cell zz-cell-access">
+                            <div class="zz-cell-bd">
+                                <p>标题2</p>
+                            </div>
+                            <div class="zz-cell-ft">
+                                说明
+                                <span class="zz-badge">1</span>
+                            </div>
+                        </div>
+                        <div class="zz-cell zz-cell-access">
+                            <div class="zz-cell-hd">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" style="display: block;">
+                            </div>
+                            <div class="zz-cell-bd">
+                                <p>标题2</p>
+                            </div>
+                            <div class="zz-cell-ft">
+                                说明
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zz-cells zz-cells-radio">
+                        <label class="zz-cell zz-check-label" for="r1">
+                            <div class="zz-cell-hd">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=">
+                            </div>
+                            <div class="zz-cell-bd">兴业银行兴业银行兴业银行兴业银行</div>
+                            <div class="zz-cell-ft">
+                                <input class="zz-radio" type="radio" name="radio1" id="r1">
+                                <i class="icon ion-android-done"></i>
+                            </div>
+                        </label>
+                        <label class="zz-cell zz-check-label" for="r2">
+                            <div class="zz-cell-hd">1y</div>
+                            <div class="zz-cell-bd">兴业银行兴业银行兴业银行兴业银行兴业行</div>
+                            <div class="zz-cell-ft">
+                                <input class="zz-radio" type="radio" name="radio1" id="r2">
+                                <i class="icon ion-android-done"></i>
+                            </div>
+                        </label>
+                        <label class="zz-cell zz-check-label" for="r3">
+                            <div class="zz-cell-hd">1y</div>
+                            <div class="zz-cell-bd">兴业银行</div>
+                            <div class="zz-cell-ft">
+                                <input class="zz-radio" type="radio" name="radio1" id="r3">
+                                <i class="icon ion-android-done"></i>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="zz-cells-checkbox-demo">
+                        <div class="zz-cells zz-cells-checkbox">
+                            <label class="zz-cell zz-check-label" for="c1">
+                                <div class="zz-cell-hd">
+                                    <input class="zz-checkbox" type="checkbox" name="checkbox1" id="c1">
+                                    <i class="icon ion-android-radio-button-off"></i>
+                                </div>
+                                <div class="zz-cell-bd">
+                                    多选按钮1111yyy[j]
+                                </div>
+                            </label>
+                            <label class="zz-cell zz-check-label" for="c2">
+                                <div class="zz-cell-hd">
+                                    <input class="zz-checkbox" type="checkbox" name="checkbox1" id="c2">
+                                    <i class="icon ion-android-radio-button-off"></i>
+                                </div>
+                                <div class="zz-cell-bd">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII="> 多选按钮1111yyy[j]
+                                </div>
+                            </label>
+                            <label class="zz-cell zz-check-label" for="c3">
+                                <div class="zz-cell-hd">
+                                    <input class="zz-checkbox" type="checkbox" name="checkbox1" id="c3">
+                                    <i class="icon ion-android-radio-button-off"></i>
+                                </div>
+                                <div class="zz-cell-bd">
+                                    多选按钮1111yyy[j]
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
     <script type="text/javascript">
+    function rld(){
+        location.reload();
+    }
     </script>
 </body>
 
