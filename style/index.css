@@ -569,6 +569,97 @@ input[type='button'].zz-btn:focus {
 .zz-dialog-btn-warn {
   color: #f00;
 }
+.zz-actionsheet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #EFEFF4;
+  z-index: 3000;
+}
+.zz-actionsheet > div {
+  position: relative;
+  background-color: #FCFCFD;
+}
+.zz-actionsheet-title {
+  position: relative;
+  padding: .25rem;
+  font-size: .4rem;
+  text-align: center;
+  color: #888f9b;
+}
+.zz-actionsheet-title:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #d9d9d9;
+  color: #d9d9d9;
+}
+.zz-actionsheet-title span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.zz-actionsheet-menu {
+  position: relative;
+}
+.zz-actionsheet-menu .zz-actionsheet-item {
+  position: relative;
+  padding: .2rem;
+  font-size: .4rem;
+  text-align: center;
+}
+.zz-actionsheet-menu .zz-actionsheet-item:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #d9d9d9;
+  color: #d9d9d9;
+}
+.zz-actionsheet-menu .zz-actionsheet-item:active {
+  background-color: #ECECEC;
+}
+.zz-actionsheet-menu .zz-actionsheet-item:last-child:before {
+  display: none;
+}
+.zz-actionsheet-action {
+  margin-top: .2rem;
+}
+.zz-actionsheet-action .zz-actionsheet-btn {
+  position: relative;
+  display: block;
+  padding: .2rem;
+  font-size: .36rem;
+  text-align: center;
+  color: #445c95;
+}
+.zz-actionsheet-action .zz-actionsheet-btn:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #d9d9d9;
+  color: #d9d9d9;
+}
+.zz-actionsheet-action .zz-actionsheet-btn:active {
+  background-color: #ECECEC;
+}
+.zz-actionsheet-action .zz-actionsheet-btn:last-child:before {
+  display: none;
+}
+.zz-actionsheet-action .zz-actionsheet-btn-warn {
+  color: #f00;
+}
 .zz-toast {
   position: fixed;
   left: 50%;
