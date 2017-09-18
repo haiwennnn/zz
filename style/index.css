@@ -267,6 +267,7 @@ input[type='button'].zz-btn:focus {
 }
 .zz-cells {
   position: relative;
+  width: 100%;
   overflow: hidden;
   background-color: #fff;
 }
@@ -294,6 +295,7 @@ input[type='button'].zz-btn:focus {
 .zz-cell {
   position: relative;
   display: flex;
+  height: .4rem;
   padding: .2rem .3rem;
   align-items: center;
   font-size: .3rem;
@@ -319,6 +321,7 @@ input[type='button'].zz-btn:focus {
 }
 .zz-cell-bd {
   flex: 1;
+  padding: 0 .2rem;
 }
 .zz-label {
   display: block;
@@ -391,9 +394,6 @@ input[type='button'].zz-btn:focus {
 .zz-cells-radio .zz-cell {
   padding: .3rem;
 }
-.zz-cells-radio .zz-cell-bd {
-  padding: 0 .2rem;
-}
 .zz-cells-radio .zz-cell-ft {
   width: .3rem;
 }
@@ -434,7 +434,6 @@ input[type='button'].zz-btn:focus {
   transform: scale(1.6);
 }
 .zz-cells-checkbox .zz-cell-bd {
-  padding: 0 .2rem;
   line-height: 1;
 }
 .zz-cells-checkbox .zz-cell-bd img {
@@ -755,6 +754,7 @@ input[type='button'].zz-btn:focus {
   min-width: 3rem;
   height: .8rem;
   line-height: .8rem;
+  margin: 0 auto;
   text-align: center;
 }
 .zz-picker-btn {
@@ -773,11 +773,11 @@ input[type='button'].zz-btn:focus {
 }
 .zz-picker-bd {
   display: flex;
-  height: 5.6rem;
 }
 .zz-picker-group {
   position: relative;
   flex: 1;
+  height: 5.6rem;
   overflow: hidden;
 }
 .zz-picker-mask {

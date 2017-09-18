@@ -1,5 +1,6 @@
 .zz-cells {
     position: relative;
+    width: 100%;
     overflow: hidden;
     background-color: #fff;
     &:before {
@@ -14,7 +15,7 @@
     padding-right: .3rem;
     color: #999;
     font-size: .28rem;
-    & + .zz-cells {
+    &+.zz-cells {
         margin-top: 0;
     }
 }
@@ -22,6 +23,7 @@
 .zz-cell {
     position: relative;
     display: flex;
+    height: .4rem;
     padding: .2rem .3rem;
     align-items: center;
     font-size: .3rem;
@@ -45,4 +47,5 @@
 
 .zz-cell-bd {
     flex: 1;
+    padding: 0 .2rem;
 }
