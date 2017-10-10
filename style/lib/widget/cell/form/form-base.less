@@ -1,122 +1,121 @@
 .zz-label {
-    display: block;
-    width: 1.4rem;
-    .textWrap();
+  display: block;
+  width: 1.4rem;
+  .textWrap();
 }
 
 .zz-cell-input {
-    .zz-cell-bd {
-        padding: 0 .2rem;
-    }
+  .zz-cell-bd {
+    padding: 0 .2rem;
+  }
 }
 
 .zz-input {
-    width: 100%;
-    line-height: .4rem;
-    border: 0;
-    outline: 0;
-    font-size: inherit;
+  width: 100%;
+  line-height: .4rem;
+  border: 0;
+  outline: 0;
+  font-size: inherit;
+  -webkit-appearance: none;
+  background-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // hides the spin-button
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    background-color: transparent;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // hides the spin-button
-    &::-webkit-outer-spin-button,
-    &::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
+    margin: 0;
+  }
 }
 
 //access
 .zz-cell-access {
-    &:active {
-        background-color: #ECECEC;
+  &:active {
+    background-color: #ECECEC;
+  }
+  .zz-cell-ft {
+    position: relative;
+    padding-right: .2rem;
+    color: #999;
+    &:after {
+      content: "";
+      .setArrow(right, .14rem, #c8c8cd, 2px);
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: -.3em;
     }
-    .zz-cell-ft {
-        position: relative;
-        padding-right: .2rem;
-        color: #999;
-        &:after {
-            content: "";
-            .setArrow(right, .14rem, #c8c8cd, 2px);
-            position: absolute;
-            top: 50%;
-            right: 0;
-            margin-top: -.3em; 
-        }
-    }
+  }
 }
 
 //select
 .zz-cell-select {
-    .zz-cell-bd {
-        position: relative;
-        padding: 0 .2rem;
-        p {}
-        &:after {
-            content: "";
-            .setArrow(down, .14rem, #c8c8cd, 2px);
-            position: absolute;
-            top: 50%;
-            right: -.1rem;
-            margin-top: -.13rem;
-        }
+  .zz-cell-bd {
+    position: relative;
+    padding: 0 .2rem;
+    p {}
+    &:after {
+      content: "";
+      .setArrow(down, .14rem, #c8c8cd, 2px);
+      position: absolute;
+      top: 50%;
+      right: -.1rem;
+      margin-top: -.13rem;
     }
+  }
 }
 
 //radio
 .zz-cells-radio {
-    .zz-cell {
-        padding: .3rem;
+  .zz-cell {
+    padding: .3rem;
+  }
+  .zz-cell-bd {}
+  .zz-cell-ft {
+    width: .3rem;
+    .zz-radio {
+      position: absolute;
+      left: -999rem;
+      &:checked+i.icon {
+        display: block;
+      }
     }
-    .zz-cell-bd {
+    i.icon {
+      position: relative;
+      right: 0;
+      display: none;
+      transform: scale(1.2);
+      color: #445c95;
     }
-    .zz-cell-ft {
-        width: .3rem;
-        .zz-radio {
-            position: absolute;
-            left: -999rem;
-            &:checked+i.icon {
-                display: block;
-            }
-        }
-        i.icon {
-            position: relative;
-            right: 0;
-            display: none;
-            transform: scale(1.2);
-            color: #445c95;
-        }
-    }
+  }
 }
 
 //checkbox
 .zz-cells-checkbox {
-    .zz-cell {
-        padding: .3rem;
-    }
-    .zz-cell-hd {
-        width: .3rem;
-        .zz-checkbox {
-            position: absolute;
-            left: -999rem;
-            &:checked+i {
-                color: #445c95;
-                &::before {
-                    content: "\f375";
-                }
-            }
+  .zz-cell {
+    padding: .3rem;
+  }
+  .zz-cell-hd {
+    width: .3rem;
+    .zz-checkbox {
+      position: absolute;
+      left: -999rem;
+      &:checked+i {
+        color: #445c95;
+        &::before {
+          content: "\f375";
         }
-        i.icon {
-            color: #C9C9C9;
-            &:before {
-                transform: scale(1.6);
-            }
-        }
+      }
     }
-    .zz-cell-bd {
-        line-height: 1;
-        img {
-            vertical-align: middle;
-        }
+    i.icon {
+      color: #C9C9C9;
+      &:before {
+        transform: scale(1.6);
+      }
     }
+  }
+  .zz-cell-bd {
+    line-height: 1;
+    img {
+      vertical-align: middle;
+    }
+  }
 }

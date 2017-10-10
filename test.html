@@ -2,273 +2,275 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    <meta content="telephone=no" name="format-detection" />
-    <meta name="wap-font-scale" content="no">
-    <title>测试</title>
-    <script type="text/javascript">
-    //初始化界面缩放和根节点字体像素大小
-    var __root = document.documentElement,
-        viewport = __root.querySelector("meta[name='viewport']"),
-        scale = 1 / window.devicePixelRatio,
-        content = "width=device-width,initial-scale=" + scale + ",maximum-scale=" + scale + ",minimum-scale=" + scale + ",user-scalable=0",
-        baseWidth = 750,
-        baseFontSize = 100,
-        calFontSize = (parseInt(__root.clientWidth) / baseWidth * baseFontSize) * window.devicePixelRatio;
-    viewport.setAttribute("content", content);
-    __root.style.fontSize = calFontSize + "px";
-    </script>
-    <link href="https://cdn.bootcss.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style/index.css">
-    <link rel="stylesheet" type="text/css" href="style/example.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <meta content="telephone=no" name="format-detection" />
+  <meta name="wap-font-scale" content="no">
+  <title>测试</title>
+  <script type="text/javascript">
+  //初始化界面缩放和根节点字体像素大小
+  var __root = document.documentElement,
+    viewport = __root.querySelector("meta[name='viewport']"),
+    scale = 1 / window.devicePixelRatio,
+    content = "width=device-width,initial-scale=" + scale + ",maximum-scale=" + scale + ",minimum-scale=" + scale + ",user-scalable=0",
+    baseWidth = 750,
+    baseFontSize = 100,
+    calFontSize = (parseInt(__root.clientWidth) / baseWidth * baseFontSize) * window.devicePixelRatio;
+  viewport.setAttribute("content", content);
+  __root.style.fontSize = calFontSize + "px";
+  </script>
+  <link href="https://cdn.bootcss.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style/index.css">
+  <link rel="stylesheet" type="text/css" href="style/example.css">
 </head>
 
 <body ontouchstart="">
-    <div class="zz-container">
-        <div class="zz-header">
-            <div class="zz-header-wrap">
-                <div class="zz-hedaer-left">
-                    <span class="zz-header-item">
+  <div class="zz-container">
+    <div class="zz-header">
+      <div class="zz-header-wrap">
+        <div class="zz-hedaer-left">
+          <span class="zz-header-item">
                         <i class="icon ion-ios-arrow-back"></i>
                     </span>
-                    <span class="zz-header-item">帮助帮助</span>
-                </div>
-                <div class="zz-header-title">
-                    <span>薪享事成标题栏</span>
-                </div>
-                <div class="zz-hedaer-right">
-                    <span class="zz-header-item">关于</span>
-                    <span class="zz-header-item">
+          <span class="zz-header-item">帮助帮助</span>
+        </div>
+        <div class="zz-header-title">
+          <span>薪享事成标题栏</span>
+        </div>
+        <div class="zz-hedaer-right">
+          <span class="zz-header-item">关于</span>
+          <span class="zz-header-item">
                         <i class="icon ion-calculator"></i>
                     </span>
-                </div>
-            </div>
         </div>
-        <div class="zz-footer">
-            <div class="zz-footer-wrap">
-                <div class="zz-tabbar">
-                    <a href="javascript:;" class="zz-tabbar-item">
+      </div>
+    </div>
+    <div class="zz-content">
+      <div class="zz-footer">
+        <div class="zz-footer-wrap">
+          <div class="zz-tabbar">
+            <a href="javascript:;" class="zz-tabbar-item">
                         <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IuWbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDI0IDEwMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZGlzcGxheTpub25lO2ZpbGw6I0ZGRkZGRjt9Cgkuc3Qxe2ZpbGw6IzQwNUM5OTt9Cgkuc3Qye2ZpbGw6I0ZGOEU1NDt9Cjwvc3R5bGU+Cjxwb2x5Z29uIGlkPSJGaWxsLTEiIGNsYXNzPSJzdDAiIHBvaW50cz0iMCwxMDI0IDEwMjQsMTAyNCAxMDI0LDAgMCwwICIvPgo8ZyBpZD0i5Li76aG1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMC4wMDAwMDAsIDE1LjAwMDAwMCkiPgoJPHBhdGggaWQ9IlBhdGgiIGNsYXNzPSJzdDEiIGQ9Ik03NzcsNTEyLjFMNzc3LDUxMi4xTDc3Nyw1MTIuMWMxMC41LDAsMTksOC41LDE5LDE5djMxOC42YzAsMTcuMy0xNC4zLDMxLjMtMzEuOCwzMS4zSDIzOS43CgkJYy0xNy41LDAtMzEuOC0xNC0zMS44LTMxLjNWNTMxLjFsMCwwYzAtMTAuNSw4LjUtMTkuMSwxOS4xLTE5LjFsMCwwbDAsMGMxMC41LDAsMTkuMSw4LjUsMTkuMSwxOS4xdjMxMC41aDEyNy44VjUwOS41CgkJYzAtMTAuNCw4LjUtMTguNywxOS0xOC43SDYxMWMxMC41LDAsMTksOC40LDE5LDE4Ljd2MzMyLjFoMTI4VjUzMWwwLDBDNzU4LDUyMC42LDc2Ni41LDUxMi4xLDc3Nyw1MTIuMXoiLz4KCTxwb2x5Z29uIGlkPSJQYXRoXzFfIiBjbGFzcz0ic3QyIiBwb2ludHM9IjQxMiw4NDEuNiA1OTEuOCw4NDEuNiA1OTEuOCw1MjYuNSA0MTIsNTI2LjUgCSIvPgoJPHBhdGggaWQ9IlBhdGhfMl8iIGNsYXNzPSJzdDEiIGQ9Ik01MDIsMTg5LjdsMzgwLjEsMzcwLjZjNy44LDcuNiwyMC4zLDcuNCwyNy44LTAuNHM3LjQtMjAuMy0wLjQtMjcuOEw1MDIsMTM0LjdMOTQuNCw1MzIuMQoJCWMtNy44LDcuNi03LjksMjAuMS0wLjQsMjcuOHMyMC4xLDcuOSwyNy44LDAuNEw1MDIsMTg5Ljd6Ii8+CjwvZz4KPC9zdmc+Cg==">
                         <p class="weui-tabbar__label">微信</p>
                     </a>
-                    <a href="javascript:;" class="zz-tabbar-item">
+            <a href="javascript:;" class="zz-tabbar-item">
                         <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojZjI5MzYwO30uY2xzLTEsLmNscy0ye2ZpbGwtcnVsZTpldmVub2RkO30uY2xzLTJ7ZmlsbDojNDQ1Yzk1O308L3N0eWxlPjwvZGVmcz48dGl0bGU+cGF5LW9uPC90aXRsZT48ZyBpZD0icGF5LW9uLTI2Ij48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0zODAuNCwxNDguMmMtMTI2LjUsMC0yMjksMTAyLjUtMjI5LDIyOXMxMDIuNSwyMjksMjI5LDIyOSwyMjktMTAyLjUsMjI5LTIyOVM1MDYuOSwxNDguMiwzODAuNCwxNDguMlptMjEuMiwzMzcuNWgtNi4ydjI5LjlhMTUuMiwxNS4yLDAsMCwxLTMwLjQsMFY0ODUuN0gzMjUuMWExNS4yLDE1LjIsMCwwLDEsMC0zMC40aDc2LjNhMzEuNCwzMS40LDAsMSwwLDAtNjIuOEgzNTlBNjEuNyw2MS43LDAsMSwxLDM1OSwyNjloNi4yVjIzOS42YTE1LjIsMTUuMiwwLDEsMSwzMC40LDB2MjkuMmgzOC42YTE1LjIsMTUuMiwwLDEsMSwwLDMwLjRoLTc1YTMxLjQsMzEuNCwwLDAsMCwwLDYyLjhoNDIuNGE2MS44LDYxLjgsMCwxLDEsMCwxMjMuNloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik05MjEsNzMyLjRhNC45LDQuOSwwLDAsMC0uMy0xLjVjLS4yLS41LS4yLTEtLjMtMS4zYTIwNzcuMSwyMDc3LjEsMCwwLDAtMS4zLTIuNywzLDMsMCwwLDAtLjgtMS4yYy0uMy0uMy0uNS0uOC0uOC0xLjJsLTEuMi0xLTEtMWE5LjQsOS40LDAsMCwwLTEuMy0uOCw3LjMsNy4zLDAsMCwwLTEuMi0uN0w3MjguNCw2MzAuMmE1LDUsMCwwLDAtMS43LS43Yy0zLjItMS4yLTc5LjItMjcuNy0xNDEuMy4yTDQ0OC4yLDY3OS4zbC0xLjIuNWMtMTkuNyw5LTMwLjEsMjkuMi0yNS45LDUwLjVzMjEuMiwzNS45LDQyLjYsMzYuOWguM2MxLjMsMCw3LjQtLjMsNjkuOC00LjNsNTcuOC0zLjdhMTUuMSwxNS4xLDAsMCwwLS4zLTMwLjJsLTU5LjMsMy43LTY3LjUsNC4zYy0xMC41LS44LTEzLTkuNy0xMy43LTEyLjRhMTUuMSwxNS4xLDAsMCwxLDguNC0xN2wxMzctNDkuNiwxLjItLjVjNDguMS0yMS45LDExMC45LTIuMiwxMTguNC4ybDgyLDQwLjRMNzUyLjgsODA0LjRhOTEuNiw5MS42LDAsMCwwLTc0LjMtOS45TDQ5NC40LDg0OS45QTg2LjcsODYuNywwLDAsMSw0MjgsODQzTDEzOS43LDY4Ni44Yy0xMC40LTUuNy03LTE1LjUtNi4yLTE3LjVzNS4zLTExLDE1LjktOC4ybDIyNCw3NC43YTE1LjIsMTUuMiwwLDAsMCw5LjctMjguN0wxNTguNiw2MzJhMS41LDEuNSwwLDAsMC0uOC0uMmMtMjIuMi02LTQzLjgsNC43LTUyLjMsMjYuMXMtLjUsNDQuMywxOS45LDU1LjVMNDEzLjgsODcwLjFhMTE2LjYsMTE2LjYsMCwwLDAsODkuNCw5LjJMNjg3LjMsODI0YTYwLjUsNjAuNSwwLDAsMSw1MCw2LjhMODMxLjIsODkwbDEuMy43LjMuMmguMmMuMi4yLjMuMi43LjJsMS4yLjUuNy4yLDEuMi4zYTEsMSwwLDAsMSwuNy4ybDEuOC4yYTguMSw4LjEsMCwwLDAsMi0uMiwxLDEsMCwwLDAsLjctLjIsMy45LDMuOSwwLDAsMCwxLjMtLjNsLjctLjIsMS4yLS41LjctLjMsMS4yLS43LjctLjMsMS0uNy43LS41LjgtLjguNy0uN2EzLjUsMy41LDAsMCwwLC43LTFsLjUtLjdhLjIuMiwwLDAsMSwuMi0uMi42LjYsMCwwLDEsLjItLjMsMTAuMSwxMC4xLDAsMCwwLC43LTEuM2w2Ni44LTE0Mi4zLjUtMS4zYTExLjMsMTEuMywwLDAsMSwuNS0xLjMsNC42LDQuNiwwLDAsMCwuMi0xLjVjMC0uNS4yLTEsLjItMS41YTYuOCw2LjgsMCwwLDAsMC0zWk04MzIuOCw4NTVsLTU0LTM0LjEsNDYuMy0xMDkuMyw2MSwyOS45WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTM4MC40LDYyMS4zYzEzNC43LDAsMjQ0LjEtMTA5LjYsMjQ0LjEtMjQ0LjFTNTE0LjksMTMzLDM4MC40LDEzMywxMzYuMiwyNDIuNiwxMzYuMiwzNzcuMiwyNDUuOCw2MjEuMywzODAuNCw2MjEuM1ptMC00NTcuOWMxMTcuOSwwLDIxMy44LDk1LjksMjEzLjgsMjEzLjhTNDk4LjQsNTkxLjEsMzgwLjQsNTkxLjEsMTY2LjYsNDk1LjIsMTY2LjYsMzc3LjJzOTUuOS0yMTMuOCwyMTMuOC0yMTMuOFoiLz48L2c+PC9zdmc+" alt="" class="weui-tabbar__icon" />
                         <p class="weui-tabbar__label">微信</p>
                     </a>
-                    <a href="javascript:;" class="zz-tabbar-item">
+            <a href="javascript:;" class="zz-tabbar-item">
                         <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojZjI5MzYwO30uY2xzLTEsLmNscy0ye2ZpbGwtcnVsZTpldmVub2RkO30uY2xzLTJ7ZmlsbDojNDQ1Yzk1O308L3N0eWxlPjwvZGVmcz48dGl0bGU+bWluZS1vbjwvdGl0bGU+PGcgaWQ9Im1pbmUtMjYiPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTUwOCw1MDIuOGgxLjNjMTI0LjgtMS4zLDEwNi44LTE2OCwxMDYuOC0xNjgtNS4yLTExMS4zLTk4LjItMTEwLjUtMTA3LjQtMTEwLjFzLTEwMi4zLTEuMy0xMDcuNCwxMTAuMWMuMi4yLTE3LjksMTY2LjksMTA2LjgsMTY4WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTUxMS4yLDEwM0MzNTIuOSwxMDMsMjI0LDIzMS45LDIyNCwzOTAuMmEyODYsMjg2LDAsMCwwLDc3LjMsMTk1LjYsMTguMywxOC4zLDAsMCwwLDMuNSwzLjcsMjg2LjUsMjg2LjUsMCwwLDAsMjA2LjMsODcuOWMxNTguMywwLDI4Ny4yLTEyOC45LDI4Ny4yLTI4Ny4yUzY2OS41LDEwMyw1MTEuMiwxMDNaTTM0My41LDU4NC4zYzc4LTI1LjQsMTA1LjQtNTYuNCwxMTUtNzYuNSwxNC40LDYuNSwzMC41LDkuOSw0OC41LDEwLjJoMy43YzE5LjQtLjMsMzYuOC00LjQsNTItMTEuOSw4LjksMTkuOSwzNS42LDUyLDExNiw3OC4yYTI1NS43LDI1NS43LDAsMCwxLTMzNS4yLDBabTE2NS44LTk2LjZoLTFjLTI2LjYtLjMtNDYuOS04LjctNjEuOS0yNS44LTM4LjItNDIuOC0yOS44LTEyNC41LTI5LjgtMTI1LjN2LTFjNC04OC43LDY5LjYtOTUuNiw4OS43LTk1LjZoNS4yYzE5LjksMCw4NS41LDYuOSw4OS43LDk1LjZ2MWMuMi44LDguNCw4Mi4zLTI5LjgsMTI1LjMtMTUuMiwxNy4xLTM1LjUsMjUuNC02Mi4xLDI1LjhabTE5NCw3Mi41Yy0xMTAuOC0zMi4xLTExNC41LTcxLjUtMTE0LjUtNzEuOHYuOGgtMS43YTkxLDkxLDAsMCwwLDYuOS03YzQ1LjctNTEuNSwzOC4yLTEzOS45LDM3LjMtMTQ4LjMtNC40LTkxLjctNjcuMy0xMjQuMy0xMjAtMTI0LjNINTA2Yy01Mi41LDAtMTE1LjUsMzIuNS0xMjAsMTI0LjItLjgsOC4yLTguNSw5Ni43LDM3LjMsMTQ4LjMsMi44LDMuMiw2LDYuMiw5LDktMi41LDguNC0xOC45LDQxLjMtMTEzLjYsNjlhMjU1LjQsMjU1LjQsMCwwLDEtNjQuNi0xNzBjMC0xNDEuNiwxMTUuMS0yNTYuOSwyNTYuOS0yNTYuOVM3NjcuOSwyNDguMyw3NjcuOSwzOTBhMjU1LDI1NSwwLDAsMS02NC42LDE3MC4yWm0zMy44LDIzMC4xYTE1LjMsMTUuMywwLDAsMC0xNS4yLTE1LjJIMzAwLjVhMTUuMiwxNS4yLDAsMCwwLDAsMzAuNUg3MjEuOWExNS4zLDE1LjMsMCwwLDAsMTUuMi0xNS4yWk02NjMsOTA3YTE1LjMsMTUuMywwLDAsMC0xNS4yLTE1LjJIMzc0LjZhMTUuMiwxNS4yLDAsMCwwLDAsMzAuNUg2NDcuOUExNS40LDE1LjQsMCwwLDAsNjYzLDkwN1oiLz48L2c+PC9zdmc+" alt="" class="weui-tabbar__icon" />
                         <p class="weui-tabbar__label">微信</p>
                     </a>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="zz-body">
-            <div class="zz-btn-group" style="margin:.3rem .2rem 0;">
-                <button class="zz-btn" onClick="rld()">刷新2</button>
-            </div>
-            <div class="zz-body-wrap">
-                <div class="flex-demo">
-                    <div class="zz-flex">
-                        <div class="zz-flex-item">1</div>
-                    </div>
-                    <div class="zz-flex">
-                        <div class="zz-flex-item">1</div>
-                        <div class="zz-flex-item">2</div>
-                        <div class="zz-flex-item">3</div>
-                    </div>
-                    <div class="zz-flex">
-                        <div class="zz-flex-item">1</div>
-                        <div class="zz-flex-item">2</div>
-                        <div class="zz-flex-item">3</div>
-                        <div class="zz-flex-item">4</div>
-                    </div>
-                    <div class="zz-flex">
-                        <div class="zz-flex-item">1</div>
-                        <div class="zz-flex-item">2</div>
-                        <div class="zz-flex-item">3</div>
-                        <div class="zz-flex-item">4</div>
-                        <div class="zz-flex-item">5</div>
-                    </div>
-                </div>
-                <div class="zz-grid-demo">
-                    <div class="zz-grids">
-                        <a href="javascript:;" class="zz-grid-3">1</a>
-                        <a href="javascript:;" class="zz-grid-3">2</a>
-                        <a href="javascript:;" class="zz-grid-3">3</a>
-                        <a href="javascript:;" class="zz-grid-3">4</a>
-                    </div>
-                    <div class="zz-grids">
-                        <a href="javascript:;" class="zz-grid-4">1</a>
-                        <a href="javascript:;" class="zz-grid-4">2</a>
-                        <a href="javascript:;" class="zz-grid-4">3</a>
-                        <a href="javascript:;" class="zz-grid-4">4</a>
-                        <a href="javascript:;" class="zz-grid-4">5</a>
-                        <a href="javascript:;" class="zz-grid-4">6</a>
-                    </div>
-                </div>
-                <div class="zz-button-demo">
-                    <button class="zz-btn zz-btn-disabled">button按钮</button>
-                    <input class="zz-btn zz-btn-disabled" type="button" name="" value="input按钮">
-                    <a href="javascript:;" class="zz-btn zz-btn-disabled">a按钮</a>
-                </div>
-                <div class="zz-button-group-demo">
-                    <div class="zz-btn-group">
-                        <button class="zz-btn zz-btn-disabled">button按钮</button>
-                        <input class="zz-btn" type="button" name="" value="input按钮">
-                        <a href="javascript:;" class="zz-btn">a按钮</a>
-                        <input class="zz-btn " type="button" name="" value="input按钮">
-                        <a href="javascript:;" class="zz-btn">a按钮</a>
-                        <input class="zz-btn zz-btn-disabled" type="button" name="" value="input按钮">
-                        <a href="javascript:;" class="zz-btn ">a按钮</a>
-                    </div>
-                </div>
-                <div class="cells-demo">
-                    <div class="zz-cells__title">基础项目</div>
-                    <div class="zz-cells">
-                        <div class="zz-cell">
-                            <div class="zz-cell-hd">教育成都</div>
-                            <div class="zz-cell-bd">body</div>
-                            <div class="zz-cell-ft">footer</div>
-                        </div>
-                    </div>
-                    <div class="zz-cells__title">表单特殊项</div>
-                    <div class="zz-cells">
-                        <div class="zz-cell zz-cell-input">
-                            <div class="zz-cell-hd">
-                                <label class="zz-label">婚姻程度</label>
-                            </div>
-                            <div class="zz-cell-bd">
-                                <input class="zz-input" type="text" name="" placeholder="请输入yy123">
-                            </div>
-                        </div>
-                        <div class="zz-cell zz-cell-select">
-                            <div class="zz-cell-hd">
-                                <label class="zz-label">婚姻程度</label>
-                            </div>
-                            <div class="zz-cell-bd">
-                                <p>已婚已婚已婚已婚已婚已婚已婚已婚</p>
-                            </div>
-                        </div>
-                        <!-- TODO switch -->
-                    </div>
-                    <div class="zz-cells__title">list列表</div>
-                    <div class="zz-cells">
-                        <div class="zz-cell">
-                            <div class="zz-cell-bd">
-                                <p>标题1</p>
-                            </div>
-                            <div class="zz-cell-ft">
-                                说明
-                            </div>
-                        </div>
-                        <div class="zz-cell">
-                            <div class="zz-cell-bd">
-                                <p>标题2</p>
-                            </div>
-                            <div class="zz-cell-ft">
-                                说明
-                            </div>
-                        </div>
-                    </div>
-                    <div class="zz-cells__title">list access列表</div>
-                    <div class="zz-cells">
-                        <div class="zz-cell zz-cell-access">
-                            <div class="zz-cell-bd">
-                                <p>标题1</p>
-                            </div>
-                            <div class="zz-cell-ft">
-                                <span style="vertical-align:middle;">说明</span>
-                                <span class="zz-badge zz-badge-dot"></span>
-                            </div>
-                        </div>
-                        <div class="zz-cell zz-cell-access">
-                            <div class="zz-cell-bd">
-                                <p>标题2</p>
-                            </div>
-                            <div class="zz-cell-ft">
-                                说明
-                                <span class="zz-badge">1</span>
-                            </div>
-                        </div>
-                        <div class="zz-cell zz-cell-access">
-                            <div class="zz-cell-hd">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" style="display: block;">
-                            </div>
-                            <div class="zz-cell-bd">
-                                <p>标题2</p>
-                            </div>
-                            <div class="zz-cell-ft">
-                                说明
-                            </div>
-                        </div>
-                    </div>
-                    <div class="zz-cells zz-cells-radio">
-                        <label class="zz-cell zz-check-label" for="r1">
-                            <div class="zz-cell-hd">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=">
-                            </div>
-                            <div class="zz-cell-bd">兴业银行兴业银行兴业银行兴业银行</div>
-                            <div class="zz-cell-ft">
-                                <input class="zz-radio" type="radio" name="radio1" id="r1">
-                                <i class="icon ion-android-done"></i>
-                            </div>
-                        </label>
-                        <label class="zz-cell zz-check-label" for="r2">
-                            <div class="zz-cell-hd">1y</div>
-                            <div class="zz-cell-bd">兴业银行兴业银行兴业银行兴业银行兴业行</div>
-                            <div class="zz-cell-ft">
-                                <input class="zz-radio" type="radio" name="radio1" id="r2">
-                                <i class="icon ion-android-done"></i>
-                            </div>
-                        </label>
-                        <label class="zz-cell zz-check-label" for="r3">
-                            <div class="zz-cell-hd">1y</div>
-                            <div class="zz-cell-bd">兴业银行</div>
-                            <div class="zz-cell-ft">
-                                <input class="zz-radio" type="radio" name="radio1" id="r3">
-                                <i class="icon ion-android-done"></i>
-                            </div>
-                        </label>
-                    </div>
-                    <div class="zz-cells-checkbox-demo">
-                        <div class="zz-cells zz-cells-checkbox">
-                            <label class="zz-cell zz-check-label" for="c1">
-                                <div class="zz-cell-hd">
-                                    <input class="zz-checkbox" type="checkbox" name="checkbox1" id="c1">
-                                    <i class="icon ion-android-radio-button-off"></i>
-                                </div>
-                                <div class="zz-cell-bd">
-                                    多选按钮1111yyy[j]
-                                </div>
-                            </label>
-                            <label class="zz-cell zz-check-label" for="c2">
-                                <div class="zz-cell-hd">
-                                    <input class="zz-checkbox" type="checkbox" name="checkbox1" id="c2">
-                                    <i class="icon ion-android-radio-button-off"></i>
-                                </div>
-                                <div class="zz-cell-bd">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII="> 多选按钮1111yyy[j]
-                                </div>
-                            </label>
-                            <label class="zz-cell zz-check-label" for="c3">
-                                <div class="zz-cell-hd">
-                                    <input class="zz-checkbox" type="checkbox" name="checkbox1" id="c3">
-                                    <i class="icon ion-android-radio-button-off"></i>
-                                </div>
-                                <div class="zz-cell-bd">
-                                    多选按钮1111yyy[j]
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="zz-body">
+        <div class="zz-btn-group" style="margin:.3rem .2rem 0;">
+          <button class="zz-btn" onClick="rld()">刷新2</button>
         </div>
-        <div class="zz-component">
-            <div>
-                <!-- <div class="zz-mask"></div> -->
-                <!-- <div class="zz-dialog">
+        <div class="zz-body-wrap">
+          <div class="flex-demo">
+            <div class="zz-flex">
+              <div class="zz-flex-item">1</div>
+            </div>
+            <div class="zz-flex">
+              <div class="zz-flex-item">1</div>
+              <div class="zz-flex-item">2</div>
+              <div class="zz-flex-item">3</div>
+            </div>
+            <div class="zz-flex">
+              <div class="zz-flex-item">1</div>
+              <div class="zz-flex-item">2</div>
+              <div class="zz-flex-item">3</div>
+              <div class="zz-flex-item">4</div>
+            </div>
+            <div class="zz-flex">
+              <div class="zz-flex-item">1</div>
+              <div class="zz-flex-item">2</div>
+              <div class="zz-flex-item">3</div>
+              <div class="zz-flex-item">4</div>
+              <div class="zz-flex-item">5</div>
+            </div>
+          </div>
+          <div class="zz-grid-demo">
+            <div class="zz-grids">
+              <a href="javascript:;" class="zz-grid-3">1</a>
+              <a href="javascript:;" class="zz-grid-3">2</a>
+              <a href="javascript:;" class="zz-grid-3">3</a>
+              <a href="javascript:;" class="zz-grid-3">4</a>
+            </div>
+            <div class="zz-grids">
+              <a href="javascript:;" class="zz-grid-4">1</a>
+              <a href="javascript:;" class="zz-grid-4">2</a>
+              <a href="javascript:;" class="zz-grid-4">3</a>
+              <a href="javascript:;" class="zz-grid-4">4</a>
+              <a href="javascript:;" class="zz-grid-4">5</a>
+              <a href="javascript:;" class="zz-grid-4">6</a>
+            </div>
+          </div>
+          <div class="zz-button-demo">
+            <button class="zz-btn zz-btn-disabled">button按钮</button>
+            <input class="zz-btn zz-btn-disabled" type="button" name="" value="input按钮">
+            <a href="javascript:;" class="zz-btn zz-btn-disabled">a按钮</a>
+          </div>
+          <div class="zz-button-group-demo">
+            <div class="zz-btn-group">
+              <button class="zz-btn zz-btn-disabled">button按钮</button>
+              <input class="zz-btn" type="button" name="" value="input按钮">
+              <a href="javascript:;" class="zz-btn">a按钮</a>
+              <input class="zz-btn " type="button" name="" value="input按钮">
+              <a href="javascript:;" class="zz-btn">a按钮</a>
+              <input class="zz-btn zz-btn-disabled" type="button" name="" value="input按钮">
+              <a href="javascript:;" class="zz-btn ">a按钮</a>
+            </div>
+          </div>
+          <div class="cells-demo">
+            <div class="zz-cells__title">基础项目</div>
+            <div class="zz-cells">
+              <div class="zz-cell">
+                <div class="zz-cell-hd">教育成都</div>
+                <div class="zz-cell-bd">body</div>
+                <div class="zz-cell-ft">footer</div>
+              </div>
+            </div>
+            <div class="zz-cells__title">表单特殊项</div>
+            <div class="zz-cells">
+              <div class="zz-cell zz-cell-input">
+                <div class="zz-cell-hd">
+                  <label class="zz-label">婚姻程度</label>
+                </div>
+                <div class="zz-cell-bd">
+                  <input class="zz-input" type="text" name="" placeholder="请输入yy123">
+                </div>
+              </div>
+              <div class="zz-cell zz-cell-select">
+                <div class="zz-cell-hd">
+                  <label class="zz-label">婚姻程度</label>
+                </div>
+                <div class="zz-cell-bd">
+                  <p>已婚已婚已婚已婚已婚已婚已婚已婚</p>
+                </div>
+              </div>
+              <!-- TODO switch -->
+            </div>
+            <div class="zz-cells__title">list列表</div>
+            <div class="zz-cells">
+              <div class="zz-cell">
+                <div class="zz-cell-bd">
+                  <p>标题1</p>
+                </div>
+                <div class="zz-cell-ft">
+                  说明
+                </div>
+              </div>
+              <div class="zz-cell">
+                <div class="zz-cell-bd">
+                  <p>标题2</p>
+                </div>
+                <div class="zz-cell-ft">
+                  说明
+                </div>
+              </div>
+            </div>
+            <div class="zz-cells__title">list access列表</div>
+            <div class="zz-cells">
+              <div class="zz-cell zz-cell-access">
+                <div class="zz-cell-bd">
+                  <p>标题1</p>
+                </div>
+                <div class="zz-cell-ft">
+                  <span style="vertical-align:middle;">说明</span>
+                  <span class="zz-badge zz-badge-dot"></span>
+                </div>
+              </div>
+              <div class="zz-cell zz-cell-access">
+                <div class="zz-cell-bd">
+                  <p>标题2</p>
+                </div>
+                <div class="zz-cell-ft">
+                  说明
+                  <span class="zz-badge">1</span>
+                </div>
+              </div>
+              <div class="zz-cell zz-cell-access">
+                <div class="zz-cell-hd">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" style="display: block;">
+                </div>
+                <div class="zz-cell-bd">
+                  <p>标题2</p>
+                </div>
+                <div class="zz-cell-ft">
+                  说明
+                </div>
+              </div>
+            </div>
+            <div class="zz-cells zz-cells-radio">
+              <label class="zz-cell zz-check-label" for="r1">
+                <div class="zz-cell-hd">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=">
+                </div>
+                <div class="zz-cell-bd">兴业银行兴业银行兴业银行兴业银行</div>
+                <div class="zz-cell-ft">
+                  <input class="zz-radio" type="radio" name="radio1" id="r1">
+                  <i class="icon ion-android-done"></i>
+                </div>
+              </label>
+              <label class="zz-cell zz-check-label" for="r2">
+                <div class="zz-cell-hd">1y</div>
+                <div class="zz-cell-bd">兴业银行兴业银行兴业银行兴业银行兴业行</div>
+                <div class="zz-cell-ft">
+                  <input class="zz-radio" type="radio" name="radio1" id="r2">
+                  <i class="icon ion-android-done"></i>
+                </div>
+              </label>
+              <label class="zz-cell zz-check-label" for="r3">
+                <div class="zz-cell-hd">1y</div>
+                <div class="zz-cell-bd">兴业银行</div>
+                <div class="zz-cell-ft">
+                  <input class="zz-radio" type="radio" name="radio1" id="r3">
+                  <i class="icon ion-android-done"></i>
+                </div>
+              </label>
+            </div>
+            <div class="zz-cells-checkbox-demo">
+              <div class="zz-cells zz-cells-checkbox">
+                <label class="zz-cell zz-check-label" for="c1">
+                  <div class="zz-cell-hd">
+                    <input class="zz-checkbox" type="checkbox" name="checkbox1" id="c1">
+                    <i class="icon ion-android-radio-button-off"></i>
+                  </div>
+                  <div class="zz-cell-bd">
+                    多选按钮1111yyy[j]
+                  </div>
+                </label>
+                <label class="zz-cell zz-check-label" for="c2">
+                  <div class="zz-cell-hd">
+                    <input class="zz-checkbox" type="checkbox" name="checkbox1" id="c2">
+                    <i class="icon ion-android-radio-button-off"></i>
+                  </div>
+                  <div class="zz-cell-bd">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII="> 多选按钮1111yyy[j]
+                  </div>
+                </label>
+                <label class="zz-cell zz-check-label" for="c3">
+                  <div class="zz-cell-hd">
+                    <input class="zz-checkbox" type="checkbox" name="checkbox1" id="c3">
+                    <i class="icon ion-android-radio-button-off"></i>
+                  </div>
+                  <div class="zz-cell-bd">
+                    多选按钮1111yyy[j]
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="zz-component">
+      <div>
+        <!-- <div class="zz-mask"></div> -->
+        <!-- <div class="zz-dialog">
                     <div class="zz-dialog-hd">
                         <span>dialog标题</span>
                         <i class="icon ion-ios-close-outline zz-dialog-close"></i>
@@ -280,12 +282,12 @@
                         <a href="javascript:;" class="zz-dialog-btn zz-dialog-btn-warn">其他操作</a>
                     </div>
                 </div> -->
-                <!-- <div class="zz-toast">
+        <!-- <div class="zz-toast">
                     <i class="zz-toast-icon zz-toast-loading"></i>
                     <i class="icon ion-android-done zz-toast-icon zz-toast-done"></i>
                     <div class="zz-toast-content">正在请求正在请求</div>
                 </div> -->
-                <!-- <div class="zz-actionsheet">
+        <!-- <div class="zz-actionsheet">
                     <div class="zz-actionsheet-hd">
                         <div class="zz-actionsheet-title">
                             <span>actionsheet标题</span>
@@ -305,7 +307,7 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- <div class="zz-picker">
+        <!-- <div class="zz-picker">
                     <div class="zz-picker-hd">
                         <div class="zz-picker-action">
                             <a href="javascript:;" class="zz-picker-btn">取消</a>
@@ -338,69 +340,68 @@
                     </div>
                     <div class="zz-picker-ft"></div>
                 </div> -->
-                <div class="zz-picker">
-                    <div class="zz-picker-hd">
-                        <div class="zz-picker-action">
-                            <div class="zz-picker-title">银行卡选择</div>
-                        </div>
-                    </div>
-                    <div class="zz-picker-bd" style="display: block;">
-                        <div class="zz-cells zz-cells-radio" style="margin-top: 0;">
-                            <label class="zz-cell zz-check-label" for="rr1">
-                                <div class="zz-cell-hd">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=">
-                                </div>
-                                <div class="zz-cell-bd">中国银行</div>
-                                <div class="zz-cell-ft">
-                                    <input class="zz-radio" type="radio" name="radio2" id="rr1">
-                                    <i class="icon ion-android-done"></i>
-                                </div>
-                            </label>
-                            <label class="zz-cell zz-check-label" for="rr2">
-                                <div class="zz-cell-hd">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=">
-                                </div>
-                                <div class="zz-cell-bd">平安银行</div>
-                                <div class="zz-cell-ft">
-                                    <input class="zz-radio" type="radio" name="radio2" id="rr2">
-                                    <i class="icon ion-android-done"></i>
-                                </div>
-                            </label>
-                            <label class="zz-cell zz-check-label" for="rr3">
-                                <div class="zz-cell-hd">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=">
-                                </div>
-                                <div class="zz-cell-bd">兴业银行</div>
-                                <div class="zz-cell-ft">
-                                    <input class="zz-radio" type="radio" name="radio2" id="rr3">
-                                    <i class="icon ion-android-done"></i>
-                                </div>
-                            </label>
-                        </div>
-                        <div class="zz-cells" style="margin-top: 0;">
-                            <div class="zz-cell zz-cell-access">
-                                <div class="zz-cell-hd">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" style="display: block;">
-                                </div>
-                                <div class="zz-cell-bd">
-                                    <p>增加银行卡</p>
-                                </div>
-                                <div class="zz-cell-ft">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="zz-picker-ft"></div>
-                </div>
+        <div class="zz-picker">
+          <div class="zz-picker-hd">
+            <div class="zz-picker-action">
+              <div class="zz-picker-title">银行卡选择</div>
             </div>
+          </div>
+          <div class="zz-picker-bd" style="display: block;">
+            <div class="zz-cells zz-cells-radio" style="margin-top: 0;">
+              <label class="zz-cell zz-check-label" for="rr1">
+                <div class="zz-cell-hd">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=">
+                </div>
+                <div class="zz-cell-bd">中国银行</div>
+                <div class="zz-cell-ft">
+                  <input class="zz-radio" type="radio" name="radio2" id="rr1">
+                  <i class="icon ion-android-done"></i>
+                </div>
+              </label>
+              <label class="zz-cell zz-check-label" for="rr2">
+                <div class="zz-cell-hd">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=">
+                </div>
+                <div class="zz-cell-bd">平安银行</div>
+                <div class="zz-cell-ft">
+                  <input class="zz-radio" type="radio" name="radio2" id="rr2">
+                  <i class="icon ion-android-done"></i>
+                </div>
+              </label>
+              <label class="zz-cell zz-check-label" for="rr3">
+                <div class="zz-cell-hd">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=">
+                </div>
+                <div class="zz-cell-bd">兴业银行</div>
+                <div class="zz-cell-ft">
+                  <input class="zz-radio" type="radio" name="radio2" id="rr3">
+                  <i class="icon ion-android-done"></i>
+                </div>
+              </label>
+            </div>
+            <div class="zz-cells" style="margin-top: 0;">
+              <div class="zz-cell zz-cell-access">
+                <div class="zz-cell-hd">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" style="display: block;">
+                </div>
+                <div class="zz-cell-bd">
+                  <p>增加银行卡</p>
+                </div>
+                <div class="zz-cell-ft">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="zz-picker-ft"></div>
         </div>
+      </div>
     </div>
-    </div>
-    <script type="text/javascript">
-    function rld() {
-        location.reload();
-    }
-    </script>
+  </div>
+  <script type="text/javascript">
+  function rld() {
+    location.reload();
+  }
+  </script>
 </body>
 
 </html>
