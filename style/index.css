@@ -25,7 +25,6 @@ a {
 body {
   background-color: #ececec;
 }
-/* 主容器 */
 .zz-container {
   position: absolute;
   top: 0;
@@ -34,15 +33,19 @@ body {
   left: 0;
   box-sizing: border-box;
 }
-/* block包裹容器 */
+.zz-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 .zz-b {
   display: block;
 }
-/* inline-block包裹容器 */
 .zz-ib {
   display: inline-block;
 }
-/* heeder */
 .zz-header {
   position: absolute;
   top: 0;
@@ -102,7 +105,6 @@ body {
 .zz-header-item i.icon {
   font-size: .44rem;
 }
-/* body */
 .zz-body {
   height: 100%;
   padding-top: .9rem;
@@ -114,7 +116,6 @@ body {
 .zz-body-wrap {
   padding-bottom: .3rem;
 }
-/* footer */
 .zz-footer {
   position: absolute;
   bottom: 0;
