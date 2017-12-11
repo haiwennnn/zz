@@ -1,0 +1,82 @@
+.zz-dialog{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	width: 80%;
+	// padding: .3rem;
+	border-radius: .1rem;
+	transform:translate(-50%,-50%);
+	text-align: center;
+	box-sizing: border-box;
+	background-color: #fff;
+	box-shadow: 0 0 2px #333;
+	z-index: 3000;
+	&>div{
+		position: relative;
+	}
+}
+
+.zz-dialog-hd{
+	padding: .22rem .2rem .2rem ;
+	span{
+		font-size: .36rem;
+	}
+	&:after{
+		.setBottomLine();
+		// margin:0 -.3rem;	
+	}
+	& + .zz-dialog-bd{
+		padding:.3rem;
+	}
+}
+
+.zz-dialog-close{
+	position: absolute;
+	right: .2rem;
+	top: 50%;
+	font-size: .42rem;
+	transform:translateY(-50%);
+	&:active{
+		opacity: 0.75;
+	}
+}
+
+.zz-dialog-bd{
+	padding:.42rem .3rem;
+}
+
+.zz-dialog-ft{
+	position: relative;
+	display: flex;
+	line-height: .96rem;
+	&:before{
+		.setTopLine();
+	}
+}
+
+.zz-dialog-btn{
+	position: relative;
+	display: block;
+	flex:1;
+	color: #445c95;
+	.setTapColor();
+	&:after{
+		.setRightLine();
+	}
+	&:active{
+		background-color: #ECECEC;
+	}
+	&:first-child{
+		border-radius:0 0 0 .1rem;
+	}
+	&:last-child{
+		border-radius:0 0 .1rem 0;
+		&:after{
+			display: none;
+		}
+	}
+}
+
+.zz-dialog-btn-warn{
+	color: #f00;
+}

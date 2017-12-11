@@ -1,0 +1,87 @@
+.zz-actionsheet {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    background-color: #EFEFF4;
+    z-index: 3000;
+
+    &>div {
+        position: relative;
+        background-color: #FCFCFD;
+    }
+}
+
+.zz-actionsheet-hd {}
+
+.zz-actionsheet-bd {}
+
+.zz-actionsheet-ft {}
+
+.zz-actionsheet-title {
+    position: relative;
+    padding: .25rem;
+    font-size: .4rem;
+    text-align: center;
+    color: #888f9b;
+    &:before {
+        .setBottomLine();
+    }
+    span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+}
+
+.zz-actionsheet-menu {
+    position: relative;
+    .zz-actionsheet-item {
+        position: relative;
+        padding: .2rem;
+        font-size: .4rem;
+        text-align: center;
+        &:before {
+            .setBottomLine();
+        }
+        &:active {
+            background-color: #ECECEC;
+        }
+        &:last-child {
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+
+.zz-actionsheet-action {
+    margin-top: .2rem;
+    .zz-actionsheet-btn {
+        position: relative;
+        display: block;
+        padding: .2rem;
+        font-size: .36rem;
+        text-align: center;
+        color: #445c95;
+        &:before {
+            .setBottomLine();
+        }
+        &:active {
+            background-color: #ECECEC;
+        }
+        &:last-child {
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    .zz-actionsheet-btn-warn {
+        color: #f00;
+    }
+}
