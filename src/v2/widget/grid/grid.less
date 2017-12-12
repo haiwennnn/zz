@@ -1,41 +1,43 @@
 .zz-grids {
+  position: relative;
+  overflow: hidden;
+  &>[class^="zz-grid"] {
     position: relative;
-    overflow: hidden;
-    &>[class^="zz-grid-"] {
-        position: relative;
-        float: left;
-        box-sizing: border-box;
-        &:before {
-            .setRightLine();
-        }
-        &:after {
-            .setBottomLine();
-        }
-        &:active {
-            background-color: #ECECEC;
-        }
-    }
+    float: left;
+    box-sizing: border-box;
     &:before {
-        .setTopLine();
-        z-index: 2;
+      .setRightLine();
     }
-    &:after {}
+    &:after {
+      .setBottomLine();
+    }
+    &:active {
+      background-color: #ECECEC;
+    }
+  }
+  &:before {
+    .setTopLine();
+    z-index: 2;
+  }
+  &:after {}
 }
 
-.zz-grid-3 {
-    width: 33.3333333%;
-    &:nth-child(3n) {
-        &:before {
-            display: none;
-        }
+.zz-grid {
+  width: 33.3333333%;
+  &:nth-child(3n) {
+    &:before {
+      display: none;
     }
+  }
 }
 
-.zz-grid-4 {
+.zz-grids_4 {
+  .zz-grid {
     width: 25%;
     &:nth-child(4n) {
-        &:before {
-            display: none;
-        }
+      &:before {
+        display: none;
+      }
     }
+  }
 }

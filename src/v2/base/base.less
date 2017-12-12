@@ -1,130 +1,140 @@
 body {
-  background-color: #ececec;
+  background-color: #EFEFF4;
 }
 
-.zz-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  box-sizing: border-box;
+#app {
+  height: 100%;
 }
 
-.zz-content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.zz-b {
+.zz-page {
+  position: relative;
   display: block;
-}
-
-.zz-ib {
-  display: inline-block;
-}
-
-
-.zz-header {
-  position: absolute;
-  top: 0;
-  right: 0;
   left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.zz-header-wrap {
+.zz-page-body {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   width: 100%;
-  height: .9rem;
-  background-color: #fff;
-  z-index: 50;
-  color: #445c95;
-  box-shadow: 0 -1px 4px #cccccc;
-}
-
-.zz-header-title {
-  width: 3.5rem;
-  line-height: .9rem;
-  margin: 0 auto;
-  font-size: .36rem;
-  text-align: center;
-  vertical-align: top;
-  span {
-    display: inline-block;
-  }
-}
-
-.zz-hedaer-left,
-.zz-hedaer-right {
-  position: absolute;
-  top: 0;
   height: 100%;
-  font-size: .3rem;
 }
 
-.zz-hedaer-left {
-  left: 0;
-  padding-left: .2rem;
-}
 
-.zz-hedaer-right {
-  right: 0;
-  padding-right: .2rem;
-}
 
-.zz-header-item {
-  display: inline-block;
-  min-width: .4rem;
-  line-height: .9rem;
-  padding: 0 .1rem;
-  text-align: center;
-  vertical-align: top;
-  &:active {
-    opacity: 0.7;
-  }
-  i.icon {
-    font-size: .44rem;
-  }
-}
-
-.zz-body {
-  height: 100%;
-  padding-top: .9rem;
-  box-sizing: border-box;
-  overflow: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-.zz-body-wrap {
-  padding-bottom: .3rem;
-}
-
-.zz-footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  &+.zz-body {
-    padding-bottom: 1.1rem;
-  }
-}
-
-.zz-footer-wrap {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1.1rem;
-  background-color: #f7f7fa;
-  z-index: 50;
-  box-shadow: 0 1px 4px #cccccc;
-}
+// .zz-container {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   box-sizing: border-box;
+// }
+// .zz-content {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+// }
+// .zz-b {
+//   display: block;
+// }
+// .zz-ib {
+//   display: inline-block;
+// }
+// .zz-header {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   left: 0;
+// }
+// .zz-header-wrap {
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   top: 0;
+//   bottom: 0;
+//   width: 100%;
+//   height: .9rem;
+//   background-color: #fff;
+//   z-index: 50;
+//   color: #445c95;
+//   box-shadow: 0 -1px 4px #cccccc;
+// }
+// .zz-header-title {
+//   width: 3.5rem;
+//   line-height: .9rem;
+//   margin: 0 auto;
+//   font-size: .36rem;
+//   text-align: center;
+//   vertical-align: top;
+//   span {
+//     display: inline-block;
+//   }
+// }
+// .zz-hedaer-left,
+// .zz-hedaer-right {
+//   position: absolute;
+//   top: 0;
+//   height: 100%;
+//   font-size: .3rem;
+// }
+// .zz-hedaer-left {
+//   left: 0;
+//   padding-left: .2rem;
+// }
+// .zz-hedaer-right {
+//   right: 0;
+//   padding-right: .2rem;
+// }
+// .zz-header-item {
+//   display: inline-block;
+//   min-width: .4rem;
+//   line-height: .9rem;
+//   padding: 0 .1rem;
+//   text-align: center;
+//   vertical-align: top;
+//   &:active {
+//     opacity: 0.7;
+//   }
+//   i.icon {
+//     font-size: .44rem;
+//   }
+// }
+// .zz-body {
+//   height: 100%;
+//   padding-top: .9rem;
+//   box-sizing: border-box;
+//   overflow: hidden;
+//   overflow-y: auto;
+//   -webkit-overflow-scrolling: touch;
+// }
+// .zz-body-wrap {
+//   padding-bottom: .3rem;
+// }
+// .zz-footer {
+//   position: absolute;
+//   bottom: 0;
+//   right: 0;
+//   left: 0;
+//   &+.zz-body {
+//     padding-bottom: 1.1rem;
+//   }
+// }
+// .zz-footer-wrap {
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   width: 100%;
+//   height: 1.1rem;
+//   background-color: #f7f7fa;
+//   z-index: 50;
+//   box-shadow: 0 1px 4px #cccccc;
+// }
