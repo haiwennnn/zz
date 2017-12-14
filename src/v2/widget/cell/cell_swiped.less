@@ -1,0 +1,38 @@
+@import "../../base/fn";
+
+.zz-cell_swiped {
+  display: block;
+  padding: 0;
+  >div {
+    &.zz-cell__bd {
+      position: relative;
+      padding: 0;
+      z-index: 2;
+      background-color: #fff;
+    }
+    &.zz-cell__ft {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      font-size: 0;
+    }
+  }
+}
+
+.zz-swiped-btn {
+  display: inline-block;
+  line-height: 2.9303;		//行高根据改行的高度来定义 行总高 = ( 字体大小(.3rem)*行高(1.6) + padding(.2+.2rem) ) / font-size(.3rem) = 2.93
+  padding: 0 .3rem;
+  font-size: .3rem;
+  color: #fff;
+}
+
+.zz-swiped-btn_default {
+
+  background-color: #C7C7CC;
+}
+
+.zz-swiped-btn_warn {
+  background-color: #FF3B30;
+}

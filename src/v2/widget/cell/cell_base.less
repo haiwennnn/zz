@@ -1,3 +1,5 @@
+@import "../../base/fn";
+
 .zz-cells {
   position: relative;
   width: 100%;
@@ -23,7 +25,6 @@
 .zz-cell {
   position: relative;
   display: flex;
-  height: .4rem;
   padding: .2rem .3rem;
   align-items: center;
   font-size: .3rem;
@@ -39,13 +40,17 @@
   }
 }
 
-.zz-cell-hd {
+.zz-cell__hd {
   img {
     display: block;
   }
 }
 
-.zz-cell-bd {
+.zz-cell__bd {
   flex: 1;
   padding: 0 .2rem;
+}
+
+.zz-cell__ft{
+
 }

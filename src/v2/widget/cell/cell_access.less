@@ -1,0 +1,20 @@
+@import "../../base/fn";
+
+.zz-cell_access {
+  .setTapColor();
+  &:active {
+    background-color: #ECECEC;
+  }
+  .zz-cell__ft {
+    padding-right: .2rem;
+    position: relative;
+    &:after {
+      content: " ";
+      .setArrow(right, .16rem, #C8C8CD, .02rem);
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: -.09rem;
+    }
+  }
+}
