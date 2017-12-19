@@ -1,0 +1,23 @@
+@import "../../base/fn";
+
+.zz-btn_loading {
+  .ion-load-c {
+    height: .5rem;
+    width: .5rem;
+    margin-right: .1rem;
+  }
+  &.zz-btn_disabled {
+    color: rgba(255, 255, 255, .6);
+    background-color: #CE3C39;
+  }
+}
+
+@keyframes btnloading {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}

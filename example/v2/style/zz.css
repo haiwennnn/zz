@@ -2,6 +2,43 @@
   content: " ";
   position: absolute;
 }
+.icon_rotate {
+  font-size: .28rem;
+}
+.icon_rotate:before {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: iconRorate 1s steps(12, end) infinite;
+          animation: iconRorate 1s steps(12, end) infinite;
+}
+@-webkit-keyframes iconRorate {
+  0% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+            transform: rotate3d(0, 0, 1, 0deg);
+  }
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+            transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+@keyframes iconRorate {
+  0% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+            transform: rotate3d(0, 0, 1, 0deg);
+  }
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+            transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -170,6 +207,35 @@ a {
   color: rgba(255, 255, 255, 0.6);
   background-color: #CE3C39;
 }
+.zz-btn_loading .ion-load-c {
+  height: .5rem;
+  width: .5rem;
+  margin-right: .1rem;
+}
+.zz-btn_loading.zz-btn_disabled {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #CE3C39;
+}
+@-webkit-keyframes btnloading {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+            transform: rotate3d(0, 0, 1, 0deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+            transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+@keyframes btnloading {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+            transform: rotate3d(0, 0, 1, 0deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+            transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
 button.zz-btn,
 input[type='button'].zz-btn {
   border-width: 0;
@@ -303,6 +369,23 @@ input[type='button'].zz-btn:focus {
 .zz-swiped-btn_warn {
   background-color: #FF3B30;
 }
+.zz-badge {
+  display: inline-block;
+  min-width: .06rem;
+  line-height: 1.2;
+  margin-top: -0.06rem;
+  padding: .025rem .11rem;
+  border-radius: .14rem;
+  background-color: #F43530;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: .24rem;
+  vertical-align: middle;
+}
+.zz-badge__dot {
+  padding: .1rem;
+  min-width: 0;
+}
 .zz-mask {
   position: fixed;
   z-index: 1111;
@@ -314,6 +397,29 @@ input[type='button'].zz-btn:focus {
 }
 .zz-mask_transparent {
   background: rgba(0, 0, 0, 0);
+}
+.zz-divider {
+  position: relative;
+  width: 80%;
+  line-height: .4rem;
+  margin: .5rem auto .4rem;
+  text-align: center;
+}
+.zz-divider:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #CFCFCF;
+  z-index: 1;
+}
+.zz-divider .zz-divider__tips {
+  position: relative;
+  padding: 0 .15rem;
+  color: #999;
+  background-color: #EFEFF4;
+  z-index: 2;
 }
 .zz-tab {
   position: relative;

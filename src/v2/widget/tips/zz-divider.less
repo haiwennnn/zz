@@ -1,0 +1,25 @@
+@import "../../base/fn";
+
+.zz-divider {
+  position: relative;
+  width: 80%;
+  line-height: .4rem;
+  margin: .5rem auto .4rem;
+  text-align: center;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #CFCFCF;
+    z-index: 1;
+  }
+  .zz-divider__tips {
+    position: relative;
+    padding: 0 .15rem;
+    color: #999;
+    background-color: #EFEFF4;
+    z-index: 2;
+  }
+}
