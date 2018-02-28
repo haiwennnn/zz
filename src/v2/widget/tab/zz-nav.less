@@ -15,6 +15,7 @@
   }
 }
 
+//导航左侧右侧基础样式
 .zz-nav__left,
 .zz-nav__right {
   position: absolute;
@@ -24,8 +25,7 @@
 }
 
 .zz-nav__left {
-  left: .2rem; // height: .85rem;
-  // margin-top: .1rem;
+  left: .2rem;
 }
 
 .zz-nav__right {
@@ -33,7 +33,6 @@
 }
 
 .zz-nav__iconbtn {
-  // float: left;
   font-size: .48rem;
   vertical-align: middle;
   &:before {
@@ -45,13 +44,12 @@
 }
 
 .zz-nav__textbtn {
-  // float: left;
-  // display: inline-block;
-  // line-height: .85rem;
-  padding: .1rem .15rem; // font-size: .32rem;
-  vertical-align: middle; // 
+  padding: .1rem .15rem;
+  vertical-align: middle;
 }
 
+
+//iconbtn textbtn active样式
 .zz-nav__iconbtn,
 .zz-nav__textbtn{
 	&:active{
@@ -65,9 +63,9 @@
   margin: 0 2rem;
   font-size: .34rem;
   text-align: center;
-  .ellipsisLn(1);
   span {
     display: inline-block;
     vertical-align: top;
+    .ellipsisLn(1);
   }
 }

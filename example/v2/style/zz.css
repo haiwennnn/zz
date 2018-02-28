@@ -2,42 +2,42 @@
   content: " ";
   position: absolute;
 }
-@-webkit-keyframes iconRorate {
-  0% {
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-            transform: rotate3d(0, 0, 1, 0deg);
-  }
-  100% {
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transform: rotate3d(0, 0, 1, 360deg);
-            transform: rotate3d(0, 0, 1, 360deg);
-  }
-}
-@keyframes iconRorate {
-  0% {
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-            transform: rotate3d(0, 0, 1, 0deg);
-  }
-  100% {
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transform: rotate3d(0, 0, 1, 360deg);
-            transform: rotate3d(0, 0, 1, 360deg);
-  }
-}
 .icon_rotate {
   font-size: .28rem;
 }
 .icon_rotate:before {
   -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
   -webkit-animation: iconRorate 1s steps(12, end) infinite;
-          animation: iconRorate 1s steps(12, end) infinite;
+  animation: iconRorate 1s steps(12, end) infinite;
+}
+@-webkit-keyframes iconRorate {
+  0% {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  100% {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+@keyframes iconRorate {
+  0% {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  100% {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
 }
 html {
   -ms-text-size-adjust: 100%;
@@ -72,8 +72,8 @@ a {
 }
 .zz-flex__item {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 .zz-grids {
   position: relative;
@@ -83,7 +83,7 @@ a {
   position: relative;
   float: left;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .zz-grids > [class^="zz-grid"]:before {
   content: " ";
@@ -92,8 +92,8 @@ a {
   top: 0;
   bottom: 0;
   width: 1px;
-  border-right: 1px solid #d9d9d9;
-  color: #d9d9d9;
+  border-right: 1px solid #D9D9D9;
+  color: #D9D9D9;
 }
 .zz-grids > [class^="zz-grid"]:after {
   content: " ";
@@ -102,8 +102,8 @@ a {
   bottom: 0;
   right: 0;
   height: 1px;
-  border-bottom: 1px solid #d9d9d9;
-  color: #d9d9d9;
+  border-bottom: 1px solid #D9D9D9;
+  color: #D9D9D9;
 }
 .zz-grids > [class^="zz-grid"]:active {
   background-color: #ECECEC;
@@ -115,8 +115,8 @@ a {
   top: 0;
   right: 0;
   height: 1px;
-  border-top: 1px solid #d9d9d9;
-  color: #d9d9d9;
+  border-top: 1px solid #D9D9D9;
+  color: #D9D9D9;
   z-index: 2;
 }
 .zz-grid {
@@ -140,7 +140,7 @@ a {
   padding-left: .2rem;
   padding-right: .2rem;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: .28rem;
   text-align: center;
   text-decoration: none;
@@ -160,11 +160,11 @@ a {
   left: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  transform: scale(0.5);
   -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
+  transform-origin: 0 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: .15rem;
 }
 .zz-btn:not(.zz-btn_disabled):visited {
@@ -242,8 +242,8 @@ input[type='button'].zz-btn:focus {
   top: 0;
   right: 0;
   height: 1px;
-  border-top: 1px solid #d9d9d9;
-  color: #d9d9d9;
+  border-top: 1px solid #D9D9D9;
+  color: #D9D9D9;
 }
 .zz-cells__title {
   margin-top: .25rem;
@@ -263,8 +263,8 @@ input[type='button'].zz-btn:focus {
   display: flex;
   padding: .2rem .3rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: .3rem;
 }
 .zz-cell:after {
@@ -274,8 +274,8 @@ input[type='button'].zz-btn:focus {
   bottom: 0;
   right: 0;
   height: 1px;
-  border-bottom: 1px solid #d9d9d9;
-  color: #d9d9d9;
+  border-bottom: 1px solid #D9D9D9;
+  color: #D9D9D9;
 }
 .zz-check-label {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -288,8 +288,8 @@ input[type='button'].zz-btn:focus {
 }
 .zz-cell__bd {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   padding: 0 .2rem;
 }
 .zz-cell_access {
@@ -308,10 +308,10 @@ input[type='button'].zz-btn:focus {
   height: 0.16rem;
   width: 0.16rem;
   border-width: 0.02rem 0.02rem 0 0;
-  border-color: #c8c8cd;
+  border-color: #C8C8CD;
   border-style: solid;
   -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
-          transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
   position: relative;
   top: -2px;
   position: absolute;
@@ -419,7 +419,7 @@ input[type='button'].zz-btn:focus {
   top: 50%;
   font-size: .32rem;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .zz-nav__left {
   left: .2rem;
@@ -451,23 +451,27 @@ input[type='button'].zz-btn:focus {
   margin: 0 2rem;
   font-size: .34rem;
   text-align: center;
+}
+.zz-nav__title span {
+  display: inline-block;
+  vertical-align: top;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
 }
-.zz-nav__title span {
-  display: inline-block;
-  vertical-align: top;
-}
 .zz-tabbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 1rem;
   z-index: 600;
+  background-color: #F7F7FA;
 }
 .zz-tab {
   position: relative;
@@ -477,7 +481,7 @@ input[type='button'].zz-btn:focus {
   height: 100%;
   padding: 0 .3rem;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
