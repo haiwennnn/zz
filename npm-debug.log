@@ -2,49 +2,49 @@
 1 verbose cli [ '/usr/local/bin/node',
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'i',
-1 verbose cli   'gulp',
-1 verbose cli   '--save-d' ]
+1 verbose cli   '--save-d',
+1 verbose cli   'gulp-watch' ]
 2 info using npm@5.5.1
 3 info using node@v7.2.1
 4 silly loadCurrentTree Starting
 5 silly install loadCurrentTree
 6 silly install readLocalPackageData
-7 silly fetchPackageMetaData gulp
-8 silly fetchNamedPackageData gulp
-9 silly mapToRegistry name gulp
+7 silly fetchPackageMetaData gulp-watch
+8 silly fetchNamedPackageData gulp-watch
+9 silly mapToRegistry name gulp-watch
 10 silly mapToRegistry using default registry
 11 silly mapToRegistry registry https://registry.npm.taobao.org/
 12 silly mapToRegistry data Result {
-12 silly mapToRegistry   raw: 'gulp',
+12 silly mapToRegistry   raw: 'gulp-watch',
 12 silly mapToRegistry   scope: null,
-12 silly mapToRegistry   escapedName: 'gulp',
-12 silly mapToRegistry   name: 'gulp',
+12 silly mapToRegistry   escapedName: 'gulp-watch',
+12 silly mapToRegistry   name: 'gulp-watch',
 12 silly mapToRegistry   rawSpec: '',
 12 silly mapToRegistry   spec: 'latest',
 12 silly mapToRegistry   type: 'tag' }
-13 silly mapToRegistry uri https://registry.npm.taobao.org/gulp
-14 verbose request uri https://registry.npm.taobao.org/gulp
+13 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-watch
+14 verbose request uri https://registry.npm.taobao.org/gulp-watch
 15 verbose request no auth needed
-16 info attempt registry request try #1 at 01:05:10
-17 verbose request id bc1bc284cb7ef91e
-18 http request GET https://registry.npm.taobao.org/gulp
-19 http 200 https://registry.npm.taobao.org/gulp
-20 verbose headers { date: 'Wed, 28 Feb 2018 17:05:10 GMT',
+16 info attempt registry request try #1 at 15:16:32
+17 verbose request id 74023a6d107ed393
+18 http request GET https://registry.npm.taobao.org/gulp-watch
+19 http 200 https://registry.npm.taobao.org/gulp-watch
+20 verbose headers { date: 'Sat, 03 Mar 2018 07:16:32 GMT',
 20 verbose headers   'content-type': 'application/json; charset=utf-8',
-20 verbose headers   'content-length': '137198',
+20 verbose headers   'content-length': '147492',
 20 verbose headers   connection: 'keep-alive',
 20 verbose headers   'x-current-requests': '1',
-20 verbose headers   etag: '"217ee-SEiX39kkwd7Cs+lNY8nytYewo6Y"',
-20 verbose headers   'x-readtime': '58' }
+20 verbose headers   etag: '"24024-ehe/3C1/8BGPlwW/aERpJM0fFBo"',
+20 verbose headers   'x-readtime': '32' }
 21 silly get cb [ 200,
-21 silly get   { date: 'Wed, 28 Feb 2018 17:05:10 GMT',
+21 silly get   { date: 'Sat, 03 Mar 2018 07:16:32 GMT',
 21 silly get     'content-type': 'application/json; charset=utf-8',
-21 silly get     'content-length': '137198',
+21 silly get     'content-length': '147492',
 21 silly get     connection: 'keep-alive',
 21 silly get     'x-current-requests': '1',
-21 silly get     etag: '"217ee-SEiX39kkwd7Cs+lNY8nytYewo6Y"',
-21 silly get     'x-readtime': '58' } ]
-22 verbose get saving gulp to /Users/yanhaiwen/.npm/registry.npm.taobao.org/gulp/.cache.json
+21 silly get     etag: '"24024-ehe/3C1/8BGPlwW/aERpJM0fFBo"',
+21 silly get     'x-readtime': '32' } ]
+22 verbose get saving gulp-watch to /Users/yanhaiwen/.npm/registry.npm.taobao.org/gulp-watch/.cache.json
 23 verbose correctMkdir /Users/yanhaiwen/.npm correctMkdir not in flight; initializing
 24 silly install normalizeTree
 25 silly loadCurrentTree Finishing
@@ -58,58 +58,81 @@
 33 silly loadShrinkwrap Finishing
 34 silly loadAllDepsIntoIdealTree Starting
 35 silly install loadAllDepsIntoIdealTree
-36 silly resolveWithNewModule gulp@3.9.1 checking installable status
-37 silly cache add args [ 'gulp', null ]
-38 verbose cache add spec gulp
+36 silly resolveWithNewModule gulp-watch@5.0.0 checking installable status
+37 silly cache add args [ 'gulp-watch', null ]
+38 verbose cache add spec gulp-watch
 39 silly cache add parsed spec Result {
-39 silly cache add   raw: 'gulp',
+39 silly cache add   raw: 'gulp-watch',
 39 silly cache add   scope: null,
-39 silly cache add   escapedName: 'gulp',
-39 silly cache add   name: 'gulp',
+39 silly cache add   escapedName: 'gulp-watch',
+39 silly cache add   name: 'gulp-watch',
 39 silly cache add   rawSpec: '',
 39 silly cache add   spec: 'latest',
 39 silly cache add   type: 'tag' }
-40 silly addNamed gulp@latest
-41 verbose addNamed "latest" is being treated as a dist-tag for gulp
-42 info addNameTag [ 'gulp', 'latest' ]
-43 silly mapToRegistry name gulp
+40 silly addNamed gulp-watch@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for gulp-watch
+42 info addNameTag [ 'gulp-watch', 'latest' ]
+43 silly mapToRegistry name gulp-watch
 44 silly mapToRegistry using default registry
 45 silly mapToRegistry registry https://registry.npm.taobao.org/
 46 silly mapToRegistry data Result {
-46 silly mapToRegistry   raw: 'gulp',
+46 silly mapToRegistry   raw: 'gulp-watch',
 46 silly mapToRegistry   scope: null,
-46 silly mapToRegistry   escapedName: 'gulp',
-46 silly mapToRegistry   name: 'gulp',
+46 silly mapToRegistry   escapedName: 'gulp-watch',
+46 silly mapToRegistry   name: 'gulp-watch',
 46 silly mapToRegistry   rawSpec: '',
 46 silly mapToRegistry   spec: 'latest',
 46 silly mapToRegistry   type: 'tag' }
-47 silly mapToRegistry uri https://registry.npm.taobao.org/gulp
-48 verbose addNameTag registry:https://registry.npm.taobao.org/gulp not in flight; fetching
-49 verbose get https://registry.npm.taobao.org/gulp not expired, no request
-50 silly addNameTag next cb for gulp with tag latest
-51 silly addNamed gulp@3.9.1
-52 verbose addNamed "3.9.1" is a plain semver version for gulp
-53 silly cache afterAdd gulp@3.9.1
-54 verbose afterAdd /Users/yanhaiwen/.npm/gulp/3.9.1/package/package.json not in flight; writing
-55 verbose correctMkdir /Users/yanhaiwen/.npm correctMkdir not in flight; initializing
-56 verbose afterAdd /Users/yanhaiwen/.npm/gulp/3.9.1/package/package.json written
-57 verbose stack TypeError: Class constructor  cannot be invoked without 'new'
-57 verbose stack     at doUntar (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:343:33)
-57 verbose stack     at doGunzip (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:339:5)
-57 verbose stack     at ReadStream.OD (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:315:7)
-57 verbose stack     at emitOne (events.js:96:13)
-57 verbose stack     at ReadStream.emit (events.js:188:7)
-57 verbose stack     at readableAddChunk (_stream_readable.js:176:18)
-57 verbose stack     at ReadStream.Readable.push (_stream_readable.js:134:10)
-57 verbose stack     at onread (fs.js:1838:12)
-57 verbose stack     at callback (/usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:108:19)
-57 verbose stack     at FSReqWrap.wrapper [as oncomplete] (fs.js:602:17)
-58 verbose cwd /Users/yanhaiwen/wwwroot/git/zz
-59 error Darwin 17.4.0
-60 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "i" "gulp" "--save-d"
-61 error node v7.2.1
-62 error npm  v5.5.1
-63 error Class constructor  cannot be invoked without 'new'
-64 error If you need help, you may report this error at:
-64 error     <https://github.com/npm/npm/issues>
-65 verbose exit [ 1, true ]
+47 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-watch
+48 verbose addNameTag registry:https://registry.npm.taobao.org/gulp-watch not in flight; fetching
+49 verbose get https://registry.npm.taobao.org/gulp-watch not expired, no request
+50 silly addNameTag next cb for gulp-watch with tag latest
+51 silly addNamed gulp-watch@5.0.0
+52 verbose addNamed "5.0.0" is a plain semver version for gulp-watch
+53 silly mapToRegistry name gulp-watch
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npm.taobao.org/
+56 silly mapToRegistry data Result {
+56 silly mapToRegistry   raw: 'gulp-watch',
+56 silly mapToRegistry   scope: null,
+56 silly mapToRegistry   escapedName: 'gulp-watch',
+56 silly mapToRegistry   name: 'gulp-watch',
+56 silly mapToRegistry   rawSpec: '',
+56 silly mapToRegistry   spec: 'latest',
+56 silly mapToRegistry   type: 'tag' }
+57 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-watch
+58 verbose addRemoteTarball https://registry.npm.taobao.org/gulp-watch/download/gulp-watch-5.0.0.tgz not in flight; adding
+59 verbose addRemoteTarball [ 'https://registry.npm.taobao.org/gulp-watch/download/gulp-watch-5.0.0.tgz',
+59 verbose addRemoteTarball   '6fb03ab1735972e0d2866475b568555836dfd0eb' ]
+60 info retry fetch attempt 1 at 15:16:33
+61 info attempt registry request try #1 at 15:16:33
+62 http fetch GET https://registry.npm.taobao.org/gulp-watch/download/gulp-watch-5.0.0.tgz
+63 http fetch 200 https://registry.npm.taobao.org/gulp-watch/download/gulp-watch-5.0.0.tgz
+64 silly fetchAndShaCheck shasum 6fb03ab1735972e0d2866475b568555836dfd0eb
+65 verbose addTmpTarball /var/folders/nm/xc55tlb57kn2p4h9bbcg6_b80000gn/T/npm-27683-dcf2f711/registry.npm.taobao.org/gulp-watch/download/gulp-watch-5.0.0.tgz not in flight; adding
+66 verbose addTmpTarball already have metadata; skipping unpack for gulp-watch@5.0.0
+67 verbose correctMkdir /Users/yanhaiwen/.npm correctMkdir not in flight; initializing
+68 silly cache afterAdd gulp-watch@5.0.0
+69 verbose afterAdd /Users/yanhaiwen/.npm/gulp-watch/5.0.0/package/package.json not in flight; writing
+70 verbose correctMkdir /Users/yanhaiwen/.npm correctMkdir not in flight; initializing
+71 verbose afterAdd /Users/yanhaiwen/.npm/gulp-watch/5.0.0/package/package.json written
+72 verbose stack TypeError: Class constructor  cannot be invoked without 'new'
+72 verbose stack     at doUntar (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:343:33)
+72 verbose stack     at doGunzip (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:339:5)
+72 verbose stack     at ReadStream.OD (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:315:7)
+72 verbose stack     at emitOne (events.js:96:13)
+72 verbose stack     at ReadStream.emit (events.js:188:7)
+72 verbose stack     at readableAddChunk (_stream_readable.js:176:18)
+72 verbose stack     at ReadStream.Readable.push (_stream_readable.js:134:10)
+72 verbose stack     at onread (fs.js:1838:12)
+72 verbose stack     at callback (/usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:108:19)
+72 verbose stack     at FSReqWrap.wrapper [as oncomplete] (fs.js:602:17)
+73 verbose cwd /Users/yanhaiwen/wwwroot/git/zz
+74 error Darwin 17.4.0
+75 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "i" "--save-d" "gulp-watch"
+76 error node v7.2.1
+77 error npm  v5.5.1
+78 error Class constructor  cannot be invoked without 'new'
+79 error If you need help, you may report this error at:
+79 error     <https://github.com/npm/npm/issues>
+80 verbose exit [ 1, true ]

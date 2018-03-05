@@ -8,15 +8,15 @@
   <meta name="wap-font-scale" content="no">
   <title>测试</title>
   <script type="text/javascript">
-  var __root = document.documentElement,
-    viewport = __root.querySelector("meta[name='viewport']"),
-    scale = 1 / window.devicePixelRatio,
-    content = "width=device-width,initial-scale=" + scale + ",maximum-scale=" + scale + ",minimum-scale=" + scale + ",user-scalable=0",
-    baseWidth = 750,
-    baseFontSize = 100,
-    calFontSize = (parseInt(__root.clientWidth) / baseWidth * baseFontSize) * window.devicePixelRatio;
-  viewport.setAttribute("content", content);
-  __root.style.fontSize = calFontSize + "px";
+    var __root = document.documentElement,
+      viewport = __root.querySelector("meta[name='viewport']"),
+      scale = 1 / window.devicePixelRatio,
+      content = "width=device-width,initial-scale=" + scale + ",maximum-scale=" + scale + ",minimum-scale=" + scale + ",user-scalable=0",
+      baseWidth = 750,
+      baseFontSize = 100,
+      calFontSize = (parseInt(__root.clientWidth) / baseWidth * baseFontSize) * window.devicePixelRatio;
+    viewport.setAttribute("content", content);
+    __root.style.fontSize = calFontSize + "px";
   </script>
   <link href="https://cdn.bootcss.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style/zz.css">
@@ -27,24 +27,28 @@
   <div id="app">
     <div class="zz-page">
       <div class="zz-page-body">
-        <div class="zz-tab">
+        <div class="zz-tab zz-tab_inios">
           <div class="zz-nav">
-            <!-- 导航左侧区域 -->
-            <div class="zz-nav__left">
-              <!-- 存在两种形式按钮 文本和icon 最多两个 -->
-              <span class="zz-nav__iconbtn icon ion-ios-arrow-left"></span>
-              <span class="zz-nav__textbtn">按钮</span>
-            </div>
-            <div class="zz-nav__title">
-              <span>导航标题</span>
-            </div>
-            <!-- 导航右侧区域 -->
-            <div class="zz-nav__right">
-              <span class="zz-nav__iconbtn icon ion-navicon"></span>
-              <span class="zz-nav__textbtn">按钮哈哈</span>
+            <div class="zz-nav__panel">
+              <!-- 导航左侧区域 -->
+              <div class="zz-nav__left">
+                <!-- 存在两种形式按钮 文本和icon 最多两个 -->
+                <span class="zz-nav__iconbtn icon ion-ios-arrow-left"></span>
+                <span class="zz-nav__textbtn">按钮</span>
+              </div>
+              <div class="zz-nav__title">
+                <span>导航标题</span>
+              </div>
+              <!-- 导航右侧区域 -->
+              <div class="zz-nav__right">
+                <span class="zz-nav__iconbtn icon ion-navicon"></span>
+                <span class="zz-nav__textbtn">按钮哈哈</span>
+              </div>
             </div>
           </div>
-          <div class="zz-tab__panel" style="padding-bottom: 1rem;">
+          <div class="zz-tab__panel zz-tab__panel_hastabbar">
+            <div id="userAgent"></div>
+            <button class="zz-btn zz-btn_mini" onclick="rld()">刷新</button>
             <div class="zz-grids zz-grids_4">
               <div class="zz-grid">1</div>
               <div class="zz-grid">2</div>
@@ -69,7 +73,7 @@
             <div class="zz-divider">
               <span class="zz-divider__tips">
                 <i class="icon icon_rotate ion-ios-loop-strong"></i>
-              数据正在加载中</span>
+                数据正在加载中</span>
             </div>
             <div class="zz-divider zz-divider_dot"></div>
             <button class="zz-btn zz-btn_disabled">button按钮</button>
@@ -95,7 +99,9 @@
                 <div class="zz-cell__bd">
                   <p>内容文字</p>
                 </div>
-                <div class="zz-cell__ft">说明文字<span class="zz-badge zz-badge__dot"></span></div>
+                <div class="zz-cell__ft">说明文字
+                  <span class="zz-badge zz-badge_dot"></span>
+                </div>
               </div>
               <div class="zz-cell zz-cell_swiped">
                 <div class="zz-cell__bd" style="transform: translateX(-2.4rem)">
@@ -117,7 +123,9 @@
                 <div class="zz-cell__bd">
                   <p>内容文字</p>
                 </div>
-                <div class="zz-cell__ft">说明文字<span class="zz-badge">1</span></div>
+                <div class="zz-cell__ft">说明文字
+                  <span class="zz-badge">1</span>
+                </div>
               </div>
               <div class="zz-cell">
                 <div class="zz-cell__hd">
@@ -151,17 +159,48 @@
               <span class="zz-divider__tips">我是有底线的</span>
             </div>
           </div>
-          <div class="zz-tabbar"></div>
+          <div class="zz-tabbar">
+            <div class="zz-tabbar__item">
+              <div>
+                <img src="../img/icon_tabbar.png" alt="">
+                <span class="zz-badge">1</span>
+              </div>
+              <p>首页</p>
+            </div>
+            <div class="zz-tabbar__item">
+              <div>
+                <img src="../img/icon_tabbar.png" alt="">
+                <span class="zz-badge">98+</span>
+              </div>
+              <p>首页</p>
+            </div>
+            <div class="zz-tabbar__item">
+              <div>
+                <img src="../img/icon_tabbar.png" alt="">
+                <span class="zz-badge">88</span>
+              </div>
+              <p>首页</p>
+            </div>
+            <div class="zz-tabbar__item">
+              <div>
+                <img src="../img/icon_tabbar.png" alt="">
+                <span class="zz-badge zz-badge_dot"></span>
+              </div>
+              <p>首页</p>
+            </div>
+          </div>
         </div>
-        <!-- <div class="zz-mask zz-mask_transparent"></div> -->
       </div>
-      <div class="zz-page-content"></div>
+      <!-- <div class="zz-mask zz-mask_transparent"></div> -->
     </div>
+    <div class="zz-page-content"></div>
+  </div>
   </div>
   <script type="text/javascript">
-  function rld() {
-    location.reload();
-  }
+    function rld() {
+      location.reload();
+    }
+    document.getElementById('userAgent').innerHTML = navigator.userAgent
   </script>
 </body>
 

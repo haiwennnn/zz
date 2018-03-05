@@ -2,7 +2,7 @@ var gulp = require('gulp'),
   less = require('gulp-less'),
   path = require('path'),
   autoprefixer = require('gulp-autoprefixer')
-
+  console.log()
 gulp.task('v2', function () {
   return gulp.src('./example/v2/style/*.less')
     .pipe(less({
@@ -28,9 +28,8 @@ gulp.task('v1', function () {
 })
 
 gulp.task('dev', ['v1', 'v2'], function () {
-  var watcher = gulp.watch('./src/**/*.less', ['v1', 'v2']);
-  watcher.on('change', function (event) {
-    // console.log(event)
-    console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
-  });
+  gulp.watch(['src/v2/**'], ['v1', 'v2']);
+  // watcher.on('change', function (event) {
+  //   console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+  // });
 })

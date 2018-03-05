@@ -1,19 +1,28 @@
 @import "../../base/fn";
-
 @import "zz-nav";
 @import "zz-tabbar";
-
 //页面主内容面板，主内容挂载在此节点下
 .zz-tab {
-  position: relative;
-  height: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.zz-tab_inios .zz-nav {
+    padding-top: .3rem;
+    &+.zz-tab__panel {
+        padding-top: 1.15rem;
+    }
 }
 
 //content层 层级 0-500
 .zz-tab__panel {
-  height: 100%;
-  padding: 0 .3rem;
-  box-sizing: border-box;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+    height: 100%; // padding: 0 .3rem;
+    box-sizing: border-box;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+//存在底部tabbar增加距离底部padding
+.zz-tab__panel_hastabbar {
+    padding-bottom: 1rem;
 }
