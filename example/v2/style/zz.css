@@ -2,13 +2,6 @@
   content: " ";
   position: absolute;
 }
-.icon_rotate {
-  font-size: .28rem;
-}
-.icon_rotate:before {
-  transform-origin: 50% 50%;
-  animation: iconRorate 1s steps(12, end) infinite;
-}
 @keyframes iconRorate {
   0% {
     transform-origin: 50% 50%;
@@ -18,6 +11,10 @@
     transform-origin: 50% 50%;
     transform: rotate3d(0, 0, 1, 360deg);
   }
+}
+.icon_rotate:before {
+  transform-origin: 50% 50%;
+  animation: iconRorate 1s steps(12, end) infinite;
 }
 html {
   -ms-text-size-adjust: 100%;
